@@ -19,6 +19,8 @@ function command.run(message, mt,bypass)
   
   local found = true
 
+  print("Command: " .. request)
+
   ----------------------------PYROWMID------------------------
   if uj.room == 0 or bypass then
     if request == "strange machine" or request == "machine" then 
@@ -182,6 +184,8 @@ function command.run(message, mt,bypass)
         }}
       end
     elseif request == "peculiar box" or request == "box" or request == "peculiarbox" then 
+      print("Someone's tryna using the box:tm:")
+      message.channel:send("What box? There never was a box here. You've all been fooled (||ok but actually im working on fixing it lol||)")
       if not uj.lastbox then 
         uj.lastbox = -24
       end

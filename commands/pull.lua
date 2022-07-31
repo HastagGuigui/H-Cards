@@ -7,7 +7,7 @@ local time = sw:getTime()
     return
   end
 
-  local cooldown = 11.5
+  local cooldown = 3
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json",defaultjson)
 
   if not uj.equipped then
@@ -15,7 +15,7 @@ local time = sw:getTime()
   end
 
   if uj.equipped == "stoppedwatch" then
-    cooldown = 10
+    cooldown = 2
   end
 
   if uj.lastpull + cooldown > time:toHours() then

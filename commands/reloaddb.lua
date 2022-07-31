@@ -555,7 +555,7 @@ function command.run(message, mt, overwrite)
 
       if not status then
         print("uh oh")
-        message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+        message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@448560475987509268> please fix this thanks)")
       end
 
     end
