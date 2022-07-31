@@ -1,0 +1,15 @@
+{
+  "fall": [
+    "fallen",
+    "tumbled",
+    "plummeted"
+  ],
+  "ground": [
+    "ground",
+    "floor",
+    "earth"
+  ],
+  "origin": [
+    "The **@name@** @item@ has #fall# back to the #ground#. "
+  ]
+}

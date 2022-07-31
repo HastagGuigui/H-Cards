@@ -1,0 +1,512 @@
+[
+  {
+    "require": [
+      "coler",
+      "colesr",
+      "coleur"
+    ],
+    "receive": "colec"
+  },
+  {
+    "require": [
+      "farmerr",
+      "farmersr",
+      "farmerur"
+    ],
+    "receive": "farmerc"
+  },
+  {
+    "require": [
+      "haileyr",
+      "haileysr",
+      "haileyur"
+    ],
+    "receive": "haileyc"
+  },
+  {
+    "require": [
+      "ianr",
+      "iansr",
+      "ianur"
+    ],
+    "receive": "ianc"
+  },
+  {
+    "require": [
+      "insomniacr",
+      "insomniacsr",
+      "insomniacur"
+    ],
+    "receive": "insomniacc"
+  },
+  {
+    "require": [
+      "internr",
+      "internsr",
+      "internur"
+    ],
+    "receive": "internc"
+  },
+  {
+    "require": [
+      "loganr",
+      "logansr",
+      "loganur"
+    ],
+    "receive": "loganc"
+  },
+  {
+    "require": [
+      "minerr",
+      "minersr",
+      "minerur"
+    ],
+    "receive": "minerc"
+  },
+  {
+    "require": [
+      "mrsstevensonr",
+      "mrsstevensonsr",
+      "mrsstevensonur"
+    ],
+    "receive": "mrsstevensonc"
+  },
+  {
+    "require": [
+      "mrstevensonr",
+      "mrstevensonsr",
+      "mrstevensonur"
+    ],
+    "receive": "mrstevensonc"
+  },
+  {
+    "require": [
+      "paiger",
+      "paigesr",
+      "paigeur"
+    ],
+    "receive": "paigec"
+  },
+  {
+    "require": [
+      "politicianr",
+      "politiciansr",
+      "politicianur"
+    ],
+    "receive": "politicianc"
+  },
+  {
+    "require": [
+      "samurair",
+      "samuraisr",
+      "samuraiur"
+    ],
+    "receive": "samuraic"
+  },
+  {
+    "require": [
+      "luciar",
+      "luciasr",
+      "luciaur"
+    ],
+    "receive": "luciac"
+  },
+  {
+    "require": [
+      "nicoler",
+      "nicolesr",
+      "nicoleur"
+    ],
+    "receive": "nicolec"
+  },
+  {
+    "require": [
+      "yor",
+      "yosr",
+      "your"
+    ],
+    "receive": "yoc"
+  },
+  {
+    "require": [
+      "edegar",
+      "edegasr",
+      "edegaur"
+    ],
+    "receive": "edegac"
+  },
+  {
+    "require": [
+      "ottor",
+      "ottosr",
+      "ottour"
+    ],
+    "receive": "ottoc"
+  },
+  {
+    "require": [
+      "heartchickr",
+      "heartchicksr",
+      "heartchickur"
+    ],
+    "receive": "heartchickc"
+  },
+    
+  {
+    "require": [
+      "bbbr",
+      "bbbsr",
+      "bbbur"
+    ],
+    "receive": "bbbc"
+  },
+  
+  {
+    "require": [
+      "inimar",
+      "inimasr",
+      "inimaur"
+    ],
+    "receive": "inimac"
+  },
+  {
+    "require": [
+      "fhottor",
+      "fhottosr",
+      "fhottour"
+    ],
+    "receive": "fhottoc"
+  },
+  {
+    "require": [
+      "draemonr",
+      "draemonsr",
+      "draemonur"
+    ],
+    "receive": "draemonc"
+  },
+  {
+    "require": [
+      "bulbr",
+      "bulbsr",
+      "bulbur"
+    ],
+    "receive": "bulbc"
+  },
+  {
+    "require": [
+      "mylevel",
+      "crystalline"
+    ],
+    "receive": "mycrystal"
+  },
+  {
+    "require": [
+      "nicelogo",
+      "feedthemachine",
+      "retrofunky"
+    ],
+    "receive": "blackwater"
+  },
+  {
+    "require": [
+      "samuraic",
+      "samuraigroup"
+    ],
+    "receive": "samuraigroupc"
+  },
+  {
+    "require": [
+      "mrsstevensonc",
+      "mrstevensonc",
+      "stevensongroup"
+    ],
+    "receive": "stevensongroupc"
+  },
+  {
+    "require": [
+      "loganc",
+      "haileyc",
+      "couplegroup"
+    ],
+    "receive": "couplegroupc"
+  },
+  {
+    "require": [
+      "paigec",
+      "ianc",
+      "doctorgroup"
+    ],
+    "receive": "doctorgroupc"
+  },
+  {
+    "require": [
+      "quaverr",
+      "beatr",
+      "trebler",
+      "clefr",
+      "unbeatablegroup"
+    ],
+    "receive": "unbeatablegroupc"
+  },
+  {
+    "require": [
+      "rinr",
+      "buror",
+      "marijar",
+      "musedashgroup"
+    ],
+    "receive": "musedashgroupc"
+  },
+  {
+    "require": [
+      "rattler",
+      "rattlesr",
+      "rattleur"
+    ],
+    "receive": "rattlec"
+  },
+  {
+    "require": [
+      "loafyr",
+      "loafysr",
+      "loafyur"
+    ],
+    "receive": "loafyc"
+  },
+  {
+    "require": [
+      "spiderr",
+      "spidersr",
+      "spiderur"
+    ],
+    "receive": "spiderc"
+  },
+  {
+    "require": [
+      "rattlec",
+      "loafyc",
+      "spiderc",
+      "animalgroup"
+    ],
+    "receive": "animalgroupc"
+  },
+  {
+    "require": [
+      "bodybuilderr",
+      "bodybuildersr",
+      "bodybuilderur"
+    ],
+    "receive": "bodybuilderc"
+  },
+  {
+    "require": [
+      "baristar",
+      "baristasr",
+      "baristaur"
+    ],
+    "receive": "baristac"
+  },
+  {
+    "require": [
+      "bodybuilderr",
+      "bodybuildersr",
+      "bodybuilderur"
+    ],
+    "receive": "bodybuilderc"
+  },
+  {
+    "require": [
+      "cockatielr",
+      "cockatielsr",
+      "cockatielur"
+    ],
+    "receive": "cockatielc"
+  },
+  {
+    "require": [
+      "parrotr",
+      "parrotsr",
+      "parrotur"
+    ],
+    "receive": "parrotc"
+  },
+  {
+    "require": [
+      "owlr",
+      "owlsr",
+      "owlur"
+    ],
+    "receive": "owlc"
+  },
+  {
+    "require": [
+      "orioler",
+      "oriolesr",
+      "orioleur"
+    ],
+    "receive": "oriolec"
+  },
+  {
+    "require": [
+      "cockatielc",
+      "parrotc",
+      "owlc",
+      "oriolec",
+      "birdgroup"
+    ],
+    "receive": "birdgroupc"
+  },
+  {
+    "require": [
+      "connectifiar",
+      "connectifiasr",
+      "connectifiaur"
+    ],
+    "receive": "connectifiac"
+  },
+  {
+    "require": [
+      "rodneyr",
+      "rodneysr",
+      "rodneyur"
+    ],
+    "receive": "rodneyc"
+  },
+  {
+    "require": [
+      "farmerc",
+      "politicianc",
+      "hughgroup"
+    ],
+    "receive": "hughgroupc"
+  },
+  {
+    "require": [
+      "colec",
+      "nicolec",
+      "coffeegroup"
+    ],
+    "receive": "coffeegroupc"
+  },
+  {
+    "require": [
+      "janitorr",
+      "janitorsr",
+      "janitorur"
+    ],
+    "receive": "janitorc"
+  },
+  {
+    "require": [
+      "nochtr",
+      "nochtsr",
+      "nochtur"
+    ],
+    "receive": "nochtc"
+  },
+  {
+    "require": [
+      "ernelr",
+      "ernelsr",
+      "ernelur"
+    ],
+    "receive": "ernelc"
+  },
+  {
+    "require": [
+      "nochtc",
+      "ernelc",
+      "treetopgroup"
+    ],
+    "receive": "treetopgroupc"
+  },
+  {
+    "require": [
+      "unodosr",
+      "unodossr",
+      "unodosur"
+    ],
+    "receive": "unodosc"
+  },
+  {
+    "require": [
+      "ottoc",
+      "unodosc",
+      "editorgroup"
+    ],
+    "receive": "editorgroupc"
+  },
+  {
+    "require": [
+      "samuraic",
+      "insomniacc",
+      "swordgroup"
+    ],
+    "receive": "swordgroupc"
+  },
+  {
+    "require": [
+      "bulbr",
+      "bulbsr",
+      "bulbur"
+    ],
+    "receive": "bulbc"
+  },
+  {
+    "require": [
+      "coolbirdr",
+      "coolbirdsr",
+      "coolbirdur"
+    ],
+    "receive": "coolbirdc"
+  },
+  {
+    "require": [
+      "statuer",
+      "statuesr",
+      "statueur"
+    ],
+    "receive": "statuec"
+  },
+  {
+    "require": [
+      "pigr",
+      "pigsr",
+      "pigur"
+    ],
+    "receive": "pigc"
+  },
+  {
+    "require": [
+      "ratr",
+      "ratsr",
+      "ratur"
+    ],
+    "receive": "ratc"
+  },
+  {
+    "require": [
+      "goatr",
+      "goatsr",
+      "goatur"
+    ],
+    "receive": "goatc"
+  },
+  {
+    "require": [
+      "rabbitr",
+      "rabbitsr",
+      "rabbitur"
+    ],
+    "receive": "rabbitc"
+  },
+  {
+    "require": [
+      "snailr",
+      "snailsr",
+      "snailur"
+    ],
+    "receive": "snailc"
+  }
+]

@@ -1,0 +1,123 @@
+{
+  "nothing" : {
+    "name": "Nothing",
+    "description": "Does nothing (default item)",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203129881985094/nothing.png"
+  },
+  "rustysword": {
+    "name": "Rusty Sword",
+    "description": "Makes cards containing Samurai or Insomniac more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203136656572486/rustysword.png"
+  },
+  "cafemixtape": {
+    "name": "Cafe Mixtape",
+    "description": "Makes cards containing Cole Brew or coffeeshop workers more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203111897727046/cafemixtape.png"
+  },
+  "oversizedstethoscope": {
+    "name": "Oversized Stethoscope",
+    "description": "Makes cards containing medical staff more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203133455532073/oversizedstethoscope.png"
+  },
+  "valentinesdaycard": {
+    "name": "Valentine's Day Card",
+    "description": "Makes cards containing Logan or Hailey more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203143723843594/valentinesdaycard.png"
+  },
+  "hardcandy": {
+    "name": "Hard Candy",
+    "description": "Makes cards containing Mr. Stevenson or Mrs. Stevenson more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203126372139028/hardcandy.png"
+  },
+  "deluxebirdseed": {
+    "name": "Deluxe Birdseed",
+    "description": "Makes cards containing a bird more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203119036301373/deluxebirdseed.png"
+  },
+  "brokenmouse": {
+    "name": "Broken Mouse",
+    "description": "Makes for a good paperweight.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203107950493716/brokenmouse.png"
+  },
+  "fixedmouse": {
+    "name": "Fixed Mouse",
+    "description": "Sometimes lets you **Double Click**, and pull two cards at once.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832305270800515192/fixedmouse.png"
+  },
+  "stoppedwatch": {
+    "name": "Stopped Watch",
+    "description": "Brings the c!pull timer down to 10 hours.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203140405624832/stoppedwatch.png"
+  },
+  "faithfulnecklace": {
+    "name": "Faithful Necklace",
+    "description": "Brings the c!pray timer down to 20 hours.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/829203123024297984/faithfulnecklace.png"
+  },
+  "stainedgloves": {
+    "name": "Stained Gloves",
+    "description": "Brings the c!box timer down to 8 hours.\nwait...\nwere you reaching in there with your bare hands ***this whole time!??!?!?***",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849416057085231144/stainedgloves.png"
+  },
+  "paddedstickersheet": {
+    "name": "Padded Sticker Sheet",
+    "description": "Makes cards containing a custom character (being used as a traditional row) more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/832305236181909514/paddedstickersheet.png"
+  },
+  "duncecap": {
+    "name": "Dunce Cap",
+    "description": "Makes meme cards or humorous cards more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/837679401884844092/duncecap.png"
+  },
+  "deviltail": {
+    "name": "Devil Tail",
+    "description": "Makes dark or horror-themed cards more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/849096756080017418/deviltail.png"
+  },
+  "scribblednotepad": {
+    "name": "Scribbled-in Notepad",
+    "description": "Makes editor cards more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/837683791753248848/scribblednotepad.png"
+  },
+  "okamiiscollar": {
+    "name": "okamii's Collar",
+    "description": "Makes Rare cards more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/839103443347046460/okamiiscollar.png"
+  },
+  "coolhat": {
+    "name": "Cool Hat",
+    "description": "Makes you look cooler.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964894244189904916/coolhat.png"
+  },
+  "lostnametag": {
+    "name": "Lost Name Tag",
+    "description": "Makes cards containing Farmer or Politician more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/853048862256529428/lostnametag.png"
+  },
+  "charcoalpencil": {
+    "name": "Charcoal Pencil",
+    "description": "Makes cards containing Miner or Lucia Moon more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/853055152198385684/charcoalpencil.png"
+  },
+  "fieldjournal": {
+    "name": "Field Journal",
+    "description": "Makes cards containing RDRPG Bosses or Levels more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/876599201360916490/fieldjournal.png"
+  },
+  "driftingmetronome": {
+    "name": "Drifting Metronome",
+    "description": "Makes cards containing Editor characters more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/964900753619681313/driftingmetronome.png"
+  },  
+  "filmreel": {
+    "name": "Film Reel",
+    "description": "Makes animated cards more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/980973967349252167/filmreel.png"
+  },
+  "swirlymarbles": {
+    "name": "Swirly Marbles",
+    "description": "Makes ADOFAI cards more likely to be pulled.",
+    "embed": "https://cdn.discordapp.com/attachments/829197797789532181/981025409921585192/swirlymarbles.png"
+  }
+
+}

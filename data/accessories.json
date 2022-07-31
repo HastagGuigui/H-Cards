@@ -1,0 +1,190 @@
+{
+  "hats" : {
+    "nothing" : {
+      "name": "Nothing",
+      "description": "Let your chick feel the breeze on their head."
+    },
+    "fez" : {
+      "name": "Fez",
+      "description": "A simple fez. Dimension-hopping not included."
+    },
+    "tophat" : {
+      "name": "Top Hat",
+      "description": "Great on all birds - not just parrots!"
+    },
+    "bowlerhat" : {
+      "name": "Bowler Hat",
+      "description": "Bowler Pins and Bowler Ball not included."
+    },
+    "egg" : {
+      "name": "Egg(?)",
+      "description": "That sure is an egg. I think."
+    },
+    "bow" : {
+      "name": "Bow",
+      "description": "A cute pink bow."
+    },
+    "guitaristwig" : {
+      "name": "Cute Guitarist Wig",
+      "description": "An adorable wig and bow combo that’ll have you looking like a real rockstar! (Includes bonus guitar!)"
+    }
+  },
+  "eyewear" : {
+    "nothing" : {
+      "name": "Nothing",
+      "description": "All the powers (and limits) of the unaided eye."
+    },
+    "glasses" : {
+      "name": "Glasses",
+      "description": "A pair of glasses. Great for visual impairments!"
+    },
+    "shades" : {
+      "name": "Cool Shades",
+      "description": "Protect your eyes from the sun AND look wicked cool at the same time!"
+    },
+    "tintedglasses" : {
+      "name": "Tinted Glasses",
+      "description": "[[Hyperlink Blocked]]."
+    },
+    "eyepatch" : {
+      "name": "Eyepatch",
+      "description": "For the true off-brand James Bond villain look."
+    },
+    "happymask" : {
+      "name": "Happy Mask",
+      "description": ":)"
+    }
+  },
+  "neckwear" : {
+    "nothing" : {
+      "name": "Nothing",
+      "description": "An exposed neck for the vampire-deniers."
+    },
+    "bowtie" : {
+      "name": "Bow Tie",
+      "description": "An avian fashion favorite!"
+    },
+    "scarf" : {
+      "name": "Scarf",
+      "description": "For warmth in the winter, and fashion in the summer."
+    }
+  },
+  
+  "clothes" : {
+    "nothing" : {
+      "name": "Nothing",
+      "description": "How scandalous!"
+    },
+    "guitaristoutfit" : {
+      "name": "Cute Guitarist Outfit",
+      "description": "Some call it cute, others call it battle armor while hitting monsters in the face with an instrument."
+    },
+    "lobstercostume" : {
+      "name": "Lobster Costume",
+      "description": "If it looks cute on dogs, it probably looks cute on birds as well, right?"
+    }
+  },
+  
+  "shoes" : {
+    "nothing" : {
+      "name": "Nothing",
+      "description": "Feel the cold floor on your feet."
+    },
+    "sneakers" : {
+      "name": "Sneakers",
+      "description": "yooooooo heart chick wit da drip :flushed:"
+    },
+    "rollerskates" : {
+      "name": "Roller Skates",
+      "description": "Increases your chick's movement speed by about 50%, and the likelyhood of falling by 100%."
+    }
+  },
+  "other" : {
+    "nothing" : {
+      "name": "Nothing",
+      "description": "Makes your chick feel completely ordinary."
+    },
+    "gun" : {
+      "name": "Photorealistic Gun",
+      "description": "*oh god oh fuck who gave the heart chick a gun*",
+      "layer": "top"
+    },
+    "sword" : {
+      "name": "Sword",
+      "description": "Don't worry, I don't think the chick is strong enough to pull it from the ground.",
+      "layer": "top"
+    },
+    "cane" : {
+      "name": "Cane",
+      "description": "Equally good for walking and smacking people.",
+      "layer": "top"
+    },
+    "static" : {
+      "name": "Static",
+      "description": "*BZZT*",
+      "layer": "middle"
+    },
+    "rosycheeks" : {
+      "name": "Rosy Cheeks",
+      "description": "(TODO)",
+      "layer": "middle"
+    },
+    "mask" : {
+      "name": "Disposable Mask",
+      "description": "Stay safe!",
+      "layer": "middle"
+    },
+    "grass" : {
+      "name": "Patch of grass",
+      "description": "A nice place to sit.",
+      "layer": "bottom"
+    },
+    "catears" : {
+      "name": "Cat Ears",
+      "description": "Nya~",
+      "bodycolor": true,
+      "layer": "middle"
+    },
+    "cyclops" : {
+      "name": "Cyclops",
+      "description": "My name is Intern. Intern I am called by mother, father, and by all my comrades.",
+      "bodycolor": true,
+      "sclerae": true,
+      "eyes": true,
+      "layer": "middle"
+    },
+    "walleyed" : {
+      "name": "Wall-eyed",
+      "description": "Logan! This one's looking at both of us at the same time!",
+      "layer": "middle",
+      "sclerae": true,
+      "eyes": true
+    },
+    "faceless" : {
+      "name": "Faceless",
+      "description": "I have no beak, and I must cheep.",
+      "bodycolor": true,
+      "layer": "middle"
+    },
+    "blocky" : {
+      "name": "Blocky",
+      "description": "Be there or be square!",
+      "bodycolor": true,
+      "legs": true,
+      "layer": "middle"
+    },
+    "realchick" : {
+      "name": "???",
+      "description": "??????",
+      "layer": "middle",
+      "replace": true
+    },
+    "duckhead" : {
+      "name": "Duck Head",
+      "description": "Got any grapes?",
+      "layer": "middle",
+      "bodycolor": true,
+      "uncolored": true
+    }
+  }
+}

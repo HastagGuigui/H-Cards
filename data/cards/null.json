@@ -1,0 +1,19 @@
+{
+      "groupname": "null",
+      "basechance": 1,
+      "cards": [{
+          "chance": 1,
+          "filename": "nulldc",
+          "name": "[null] (nil)",
+          "type": "Discontinued",
+          "description": "null null null null",
+          "smell": "broken code",
+          "season": 1,
+          "bonuses": {
+            "scribblednotepad": true,
+            "okamiiscollar": true
+          },
+          "embed": "https://media.discordapp.net/attachments/1003292979521405049/1003303208149602335/nulldc.png"
+        }
+      ]
+    }
