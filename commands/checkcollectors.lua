@@ -26,7 +26,7 @@ function command.run(message, mt,mc)
         local ncn = cdb[newcard].name
         if not cdb[newcard].spoiler then
           mc:send{embed = {
-            color = 0x85c5ff,
+            color = 00FF00ff,
             title = "Congratulations!",
             description = 'After collecting and storing some other cards, '.. message.author.mentionString ..' got a **'.. ncn ..'!** The **'.. ncn ..'** card has been added to '..uj.pronouns["their"]..' storage.',
             image = {
