@@ -138,6 +138,8 @@ function command.run(message, mt,bypass)
   end
   
   ----------------------------LAB------------------------
+  print("is lab discovered?"..tostring(wj.labdiscovered))
+
   if (uj.room == 1 or bypass) and wj.labdiscovered then
     if request == "spider" or request == "spiderweb" or request == "web" or request == "spider web" then       
       ynbuttons(message, 'Are you okay with seeing a spider?',"spideruse",{})
@@ -184,8 +186,6 @@ function command.run(message, mt,bypass)
         }}
       end
     elseif request == "peculiar box" or request == "box" or request == "peculiarbox" then 
-      print("Someone's tryna using the box:tm:")
-      message.channel:send("What box? There never was a box here. You've all been fooled (||ok but actually im working on fixing it lol||)")
       if not uj.lastbox then 
         uj.lastbox = -24
       end
