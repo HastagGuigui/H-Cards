@@ -28,7 +28,7 @@ function command.run(message, mt)
   message.channel:send{
     content = message.author.mentionString .. ", your storage contains:",
     embed = {
-      color = 0x85c5ff,
+      color = 0xFF00ff,
       title = message.author.name .. "'s Storage",
       description = storagestring,
       footer = {
