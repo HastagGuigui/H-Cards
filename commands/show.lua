@@ -35,7 +35,7 @@ function command.run(message, mt)
       embeddescription = "\n\n*The description on the back reads:*\n> " .. cdb[curfilename].description
     end
     message.channel:send{embed = {
-      color = 0x85c5ff,
+      color = 00FF00ff,
       title = "Showing card...",
       description = 
       'Here it is! Your **'.. cdb[curfilename].name .. '** card. The shorthand form is **' .. curfilename .. '**.' .. embeddescription,
