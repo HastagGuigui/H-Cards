@@ -31,7 +31,7 @@ function command.run(message, mt)
   message.channel:send{
     content = message.author.mentionString .. ", you have the following medals:",
     embed = {
-      color = 0x85c5ff,
+      color = 00FF00ff,
       title = message.author.name .. "'s Medals",
       description = medalstring,
       footer = {

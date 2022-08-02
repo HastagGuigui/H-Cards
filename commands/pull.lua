@@ -113,7 +113,7 @@ _________________
 _________________```]])
     elseif not cdb[v].spoiler then
       message.channel:send{embed = {
-        color = 0xFF00ff,
+        color = 00FF00ff,
         title = title,
         description = message.author.mentionString .. ' got a **' .. cardname .. '** card! The **' .. cardname .. '** card has been added to ' .. uj.pronouns["their"] .. ' inventory. The shorthand form of this card is **' .. v .. '**.',
         image = {url = type(cdb[v].embed) == "table" and cdb[v].embed[math.random(#cdb[v].embed)] or cdb[v].embed}

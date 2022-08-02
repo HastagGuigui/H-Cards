@@ -77,7 +77,7 @@ function command.run(message, mt,bypass)
       end
       if uj.tokens > 0 then
         ynbuttons(message, {
-        color = 0x85c5ff,
+        color = 00FF00ff,
         title = "Using Hole...",
         description = 'Will you put a **Token** into the **Hole?** (tokens remaining: ' .. uj.tokens .. ')', 
         },"usehole", {})
@@ -111,7 +111,7 @@ function command.run(message, mt,bypass)
           wj.labdiscovered = true
         end
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = embedtitle,
           description = 'As you climb down the **Ladder**, you begin to hear the sound of a large computer whirring. Reaching the bottom reveals the source, a huge terminal, in the middle of an **Abandoned Lab.**',
           image = {
@@ -124,7 +124,7 @@ function command.run(message, mt,bypass)
         return
       else
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "Using the ladder...",
           description = 'You attempt to climb down the **Ladder**. Unfortunately, the **Hole** is still too small for you to fit through. You cannot wiggle your way out of it.',
           image = {
@@ -146,14 +146,14 @@ function command.run(message, mt,bypass)
       return
     elseif request == "table" then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = 00FF00ff,
         title = "Using Table...",
         description = 'You dust off the **Table**. But as soon as you look away, the **Table** is covered in dust again.',
       }}
     elseif request == "poster" or request == "catposter" or request == "cat poster"  then 
       if wj.ws ~= 801 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "What poster?",
           image = {
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/838793078574809098/blankwall.png'
@@ -161,7 +161,7 @@ function command.run(message, mt,bypass)
         }}
       else
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "Using Cat Poster...",
           description = "By **Pull**ing away the **Cat Poster** and putting it up elsewhere in the room, you have revealed a **Scanner**.",
           image = {
@@ -173,14 +173,14 @@ function command.run(message, mt,bypass)
     elseif request == "mouse hole" or request == "mouse" or request == "mousehole"  then 
       if uj.equipped == "brokenmouse" then
         ynbuttons(message,{
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "Using Mouse Hole...",
           description = message.author.mentionString .. ', do you want to put your **Broken Mouse** into the **Mouse Hole?**',
         },"usemousehole",{})
         return
       else
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "Using Mouse Hole...",
           description = 'You do not have anything to put into the **Mouse Hole.**',
         }}
@@ -208,7 +208,7 @@ function command.run(message, mt,bypass)
 
       if not next(uj.inventory) then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "Using Peculiar Box...",
           description = 'You do not have any cards to put into the **Peculiar Box**.',
         }}
@@ -217,7 +217,7 @@ function command.run(message, mt,bypass)
       
       if not uj.skipprompts then
         ynbuttons(message,{
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "Using Peculiar Box...",
           description = message.author.mentionString .. ', will you put a random **Trading Card** from your inventory in the **Peculiar Box?**.',
         },"usebox",{})
@@ -350,7 +350,7 @@ o-''|\\_____/)
           if uj.tokens > 0 then
             if not uj.skipprompts then
               ynbuttons(message, {
-                color = 0x85c5ff,
+                color = 00FF00ff,
                 title = "Using Terminal...",
                 description = 'Will you put a **Token** into the **Terminal?** (tokens remaining: ' .. uj.tokens .. ')',
                 image = {
@@ -417,7 +417,7 @@ o-''|\\_____/)
       --TODO: find a way to show a location's main c!look?
     elseif (request == "bridge")  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = 00FF00ff,
         title = "Using Bridge...",
         description = 'Even though the **Bridge** feels relatively sturdy to walk on, it is probably best not to mess with it too much. You never know when it all might come *crash*ing down.',
       }}
@@ -426,13 +426,13 @@ o-''|\\_____/)
       uj.room = 5
     elseif (request == "barrels")  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = 00FF00ff,
         title = "Using Barrels...",
         description = 'Interestingly, you cannot seem to find a way to open the **Barrels**, or even look at what could be inside of them...',
       }}
     elseif (request == "clouds")  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = 00FF00ff,
         title = "Using Clouds...",
         description = 'You try to touch one of the clouds. Unsurprisingly, you cannot actually reach that far.',
       }}
@@ -539,7 +539,7 @@ o-''|\\_____/)
 
         --can buy consumable
         ynbuttons(message,{
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "Buying " .. sname .. "...",
           description = "The description for this item reads: \n`".. consdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy " .. numrequest .. " of them for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .. "**?",
         },"buy",{itemtype = "consumable",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=numrequest})
@@ -583,7 +583,7 @@ o-''|\\_____/)
 
         --can buy item
         ynbuttons(message,{
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "Buying " .. sname .. "...",
           description = "The description for this item reads: \n`".. itemdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy it for "..sprice.." **Tokens**?",
         },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=1})
@@ -626,7 +626,7 @@ o-''|\\_____/)
 
         --can buy card
         ynbuttons(message,{
-          color = 0x85c5ff,
+          color = 00FF00ff,
           title = "Buying " .. sname .. "...",
           description = "The description for this card reads: \n`".. cdb[srequest].description .."`\n<@" .. message.author.id .. ">, will you buy " .. numrequest .. " of them for "..sprice.." **Token" .. (sprice == 1 and "" or "s") .."**?",
         },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=numrequest})
@@ -637,20 +637,20 @@ o-''|\\_____/)
       return
     elseif request == "wolf" then
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = 00FF00ff,
         title = "Petting Wolf...",
         description = 'The **Wolf** liked being pet!',
         image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/882289357128618034/petwolf.gif"}
       }}
     elseif request == "ghost" then
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = 00FF00ff,
         title = "Petting Ghost...",
         description = 'As you move your hand closer, an unknown force prevents you from petting the **Ghost**.'
       }}
     elseif request == "photo" or request == "dog" then
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = 00FF00ff,
         title = "Petting Dog...",
         description = 'You try to pet the **Dog**, but it\'s unfortunately stuck in a two-dimensional **Photo**.',
         image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/882287705638203443/okamii_triangle_frame_4.png"}
@@ -674,7 +674,7 @@ o-''|\\_____/)
       if uj.consumables[request] then
         if not uj.skipprompts then
           ynbuttons(message,{
-            color = 0x85c5ff,
+            color = 00FF00ff,
             title = "Using " .. consdb[request].name .. "...",
             description = "Do you want to use your **" .. consdb[request].name .. "**? The item will be consumed in the process!",
           },"useconsumable",{crequest=request,mt=mt})
