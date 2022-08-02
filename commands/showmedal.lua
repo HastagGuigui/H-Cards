@@ -30,7 +30,7 @@ function command.run(message, mt)
 
   print("user has medal")
   message.channel:send{embed = {
-    color = 00FF00ff,
+    color = 0x00FF00,
     title = "Showing medal...",
     description = 'Here it is! Your **'.. medaldb[curfilename].name .. '** medal. The shorthand form is **' .. curfilename .. '**.\n\n*The description on the back reads:*\n> ' .. medaldb[curfilename].description,
     image = {

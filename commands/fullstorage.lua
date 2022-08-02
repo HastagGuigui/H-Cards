@@ -30,7 +30,7 @@ function command.run(message, mt)
       message.author:send{
         content = contentstring,
         embed = {
-          color = 00FF00ff,
+          color = 0x00FF00,
           title = titlestring,
           description = prevstorestring
         },

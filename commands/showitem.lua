@@ -36,7 +36,7 @@ function command.run(message, mt)
   print("user has item or consumable")
   
   message.channel:send{embed = {
-    color = 00FF00ff,
+    color = 0x00FF00,
     title = "Showing item...",
     description = 'Here it is! Your **'.. name .. '** item. The shorthand form is **' .. curfilename .. '**.\n\n*The description on the back reads:*\n> ' .. description,
     image = {

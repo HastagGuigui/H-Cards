@@ -28,7 +28,7 @@ function command.run(message, mt)
   message.channel:send{
     content = message.author.mentionString .. ", your inventory contains:",
     embed = {
-      color = 00ff00ff,
+      color = 0x00FF00,
       title = message.author.name .. "'s Inventory",
       description = invstring,
       footer = {
