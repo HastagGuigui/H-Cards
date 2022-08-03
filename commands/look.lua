@@ -426,14 +426,16 @@ function command.run(message, mt)
         color = 0x00FF00,
         title = "Looking at Shop...",
         --description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.',
-        description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by... **G-UI**? He seems to be taking his new job pretty decently, as well as trying his best at running this buisness. As you look around, you notice a weird floating **orb** in a glass cage. Upon getting closer to the counter, G-UI notices you and says **"Hi, welcome to my shop!"**'
+        description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by... **G-UI**? He seems to be taking his new job pretty decently, as well as trying his best at running this buisness. As you look around, you notice a weird floating **orb** in a glass cage. Upon getting closer to the counter, G-UI notices you and says **"Hi, welcome to my shop!"**',
         fields = {{
           name = "The Shop is selling:",
           value = shopstr,
           inline = true
         }},
-        image = {url = "attachment://shop.png"}},
-        files = {getshopimage()}}
+        image = {url = "attachment://shop.png"}
+      },
+      files = {getshopimage()}
+      }
     elseif (request == "wolf")  then
       message.channel:send{embed = {
         color = 0x00FF00,
@@ -480,13 +482,13 @@ function command.run(message, mt)
       end
       message.channel:send{embed = {
         color = 0x00bfff,
-        title = "Looking at G-UI..."
+        title = "Looking at G-UI...",
         description = '"Hm? Why are you looking at me like that?... Oh, you wanna know when\'s next restockage? In about '.. durationtext ..'."'
       }}
     elseif (request == "orb") then
       message.channel:send{embed = {
         color = 0x00bfff,
-        title = "Looking at the Orb"
+        title = "Looking at the Orb",
         description = 'This purple orb seems strangely odd. It\'s just floating, not even moving at all. It\'s like it\'s frozen in place. \n \n "Oh, the **Reality Orb**? That\'s an old relic I found while exploring the **Pyrowmid**."'
       }}
     else
