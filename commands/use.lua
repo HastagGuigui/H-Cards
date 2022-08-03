@@ -464,42 +464,42 @@ o-''|\\_____/)
       --error handling
       local sendshoperror = {
         notenough = function()
-          message.channel:send('The **Wolf** frowns. You don\'t have the ' .. sprice .. ' **Tokens** required to buy the **' .. sname .. '**!')
+          message.channel:send('**G-UI**, becoming a bit disappointed, tells you: "Hey man, sorry, but you need ' .. sprice .. ' **Tokens** to buy that **' .. sname .. '**."')
         end,
 
         outofstock = function()
-          message.channel:send('The **Wolf** frowns. It is currently out of stock of **' .. sname .. '**.')
+          message.channel:send('**G-UI**, kinda pensive, simply says: "Sorry, we\'re out of stock of **' .. sname .. '**. Come back again later!"')
         end,
 
         toomanyrequested = function()
-          message.channel:send('The **Wolf** frowns. You can only buy ' .. stock .. ' **' .. sname .. '** at most.')
+          message.channel:send('**G-UI**, looking sorry, tells you: "Uh, I... don\'t have that many cards. I only have ' .. stock .. ' cards of type **' .. sname .. '** at most."')
         end,
 
         donthave = function()
           if nopeeking then
-            message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
+            message.channel:send('**G-UI** stares at you, confused. "I don\'t have a ' .. mt[2] .. '."')
           else
-            message.channel:send('The **Wolf** looks at you with confusion. It doesn\'t seem to be selling **' .. sname .. '**.')
+            message.channel:send('**G-UI** stares at you, confused. "Uhhh... I\'m not selling any **' .. sname .. '**s at the moment."')
           end
         end,
 
         alreadyhave = function()
-          message.channel:send('The **Wolf** looks at you with confusion. You already have the **' .. sname .. '** item.')
+          message.channel:send('**G-UI** stares at you, confused. "I don\'t think I\'m allowed to sell a **' .. sname .. '** to someone that has one already.')
         end,
         
         hasfixedmouse = function()
-          message.channel:send('The **Wolf** frowns. You already own a Mouse.')
+          message.channel:send('**G-UI** simply tells you: "You already have a **fixed mouse**, why would you need a **broken** one?" and **refused** your request.')
         end,
 
         oneitemonly = function()
-          message.channel:send('The **Wolf** frowns. You can only own one of each equippable item.')
+          message.channel:send('**G-UI** stares at you, confused. "You already have this item."')
         end,
 
         unknownrequest = function()
           if nopeeking then
-            message.channel:send('The **Wolf** looks at you with confusion. It might not be selling ' .. mt[2] .. ', or it might have misunderstood your request.')
+            message.channel:send('**G-UI** stares at you, confused. "I don\'t have a ' .. mt[2] .. '."')
           else
-            message.channel:send('The **Wolf** looks at you with confusion. It does not appear to know what ' .. mt[2] .. ' is.')
+            message.channel:send('**G-UI** stares at you, confused. "What the \\*beep\\* is a ' .. mt[2] .. '?"')
           end
         end
       }
@@ -635,25 +635,19 @@ o-''|\\_____/)
 
       sendshoperror["unknownrequest"]()
       return
-    elseif request == "wolf" then
+    elseif request == "g-ui" then
       message.channel:send{embed = {
         color = 0x00FF00,
-        title = "Petting Wolf...",
-        description = 'The **Wolf** liked being pet!',
-        image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/882289357128618034/petwolf.gif"}
+        title = "Petting G-UI...",
+        description = '"Uh- thanks?"',
+        footer = "Sorry, didn't feel like remaking the gif rn. -#Guigui",
+        image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/882289357128618034/petwolf.gif"} --todo, replace the gif
       }}
-    elseif request == "ghost" then
+    elseif request == "orb" then
       message.channel:send{embed = {
         color = 0x00FF00,
-        title = "Petting Ghost...",
-        description = 'As you move your hand closer, an unknown force prevents you from petting the **Ghost**.'
-      }}
-    elseif request == "photo" or request == "dog" then
-      message.channel:send{embed = {
-        color = 0x00FF00,
-        title = "Petting Dog...",
-        description = 'You try to pet the **Dog**, but it\'s unfortunately stuck in a two-dimensional **Photo**.',
-        image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/882287705638203443/okamii_triangle_frame_4.png"}
+        title = "Trying to touch the Orb...",
+        description 'Unfortunately, it\'s behind a thick glass box.'
       }}
     else
       found = false

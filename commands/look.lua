@@ -425,7 +425,8 @@ function command.run(message, mt)
       message.channel:send{embed = {
         color = 0x00FF00,
         title = "Looking at Shop...",
-        description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.',
+        --description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by the **Wolf**. It seems to be doing a pretty good job at running the business. As you look around, you also see a framed **Photo** hangning on the wall. The **Ghost** in the corner is standing guard, watching over the store.',
+        description = 'The **Quaint Shop** is filled with cards and card accessories, all sold by... **G-UI**? He seems to be taking his new job pretty decently, as well as trying his best at running this buisness. As you look around, you notice a weird floating **orb** in a glass cage. Upon getting closer to the counter, G-UI notices you and says **"Hi, welcome to my shop!"**'
         fields = {{
           name = "The Shop is selling:",
           value = shopstr,
@@ -434,6 +435,33 @@ function command.run(message, mt)
         image = {url = "attachment://shop.png"}},
         files = {getshopimage()}}
     elseif (request == "wolf")  then
+      message.channel:send{embed = {
+        color = 0x00FF00,
+        title = "Looking at Wolf...",
+        description = '"The **Wolf?** Oh, it went back to the RDCards bot\'s world. It told me to take his place, because it can\'t handle two shops at once."'
+        --description = 'The **Wolf** looks up and gives a friendly wave. They seem quite content with where they are at, but you can see a small amount of worry in their eyes.\n\nWhen asked about the **Shop**, the **Wolf** tells you that it\'s going to be restocked in ' .. durationtext .. '.',
+      }}
+    elseif (request == "ghost")  then 
+      message.channel:send{embed = {
+        color = 0x00FF00,
+        title = "Looking at Ghost...",
+        description = '"Oh yeah, the **Ghost** is gone with the **Wolf**."'
+        --description = 'The **Ghost** stands idily by, making sure the shop remains safe. You can tell it is constantly internally screaming.',
+      }}
+    --elseif (request == "photo" or request == "framed photo") then
+    --  local randomimages = {
+    --    "https://cdn.discordapp.com/attachments/829197797789532181/880110700989673472/okamii_triangle_frame.png",
+    --    "https://cdn.discordapp.com/attachments/829197797789532181/880302232338333747/okamii_triangle_frame_2.png",
+    --    "https://cdn.discordapp.com/attachments/829197797789532181/880302252278034442/okamii_triangle_frame_3.png"
+    --  }
+    --  local imageindex = (uj.equipped == "okamiiscollar" and math.random(#randomimages) or 1)
+    --  message.channel:send{embed = {
+    --    color = 0x00FF00,
+    --    title = "Looking at Photo...",
+    --    description = 'As you gaze into the framed **Photo**, the dog\'s odd triangular shape reminds you of the Pyrowmid you\'ve just been from.' .. (imageindex ~= 1 and " The rotated figure may have been a result from your collar." or ""),
+    --    image = {url = randomimages[imageindex]}
+    --  }}
+    elseif (request == "g-ui") then
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
       local time = sw:getTime()
       checkforreload(time:toDays())
@@ -451,28 +479,15 @@ function command.run(message, mt)
         if minutesleft % 60 ~= 1 then durationtext = durationtext .. "s" end
       end
       message.channel:send{embed = {
-        color = 0x00FF00,
-        title = "Looking at Wolf...",
-        description = 'The **Wolf** looks up and gives a friendly wave. They seem quite content with where they are at, but you can see a small amount of worry in their eyes.\n\nWhen asked about the **Shop**, the **Wolf** tells you that it\'s going to be restocked in ' .. durationtext .. '.',
+        color = 0x00bfff,
+        title = "Looking at G-UI..."
+        description = '"Hm? Why are you looking at me like that?... Oh, you wanna know when\'s next restockage? In about '.. durationtext ..'."'
       }}
-    elseif (request == "ghost")  then 
+    elseif (request == "orb") then
       message.channel:send{embed = {
-        color = 0x00FF00,
-        title = "Looking at Ghost...",
-        description = 'The **Ghost** stands idily by, making sure the shop remains safe. You can tell it is constantly internally screaming.',
-      }}
-    elseif (request == "photo" or request == "framed photo") then
-      local randomimages = {
-        "https://cdn.discordapp.com/attachments/829197797789532181/880110700989673472/okamii_triangle_frame.png",
-        "https://cdn.discordapp.com/attachments/829197797789532181/880302232338333747/okamii_triangle_frame_2.png",
-        "https://cdn.discordapp.com/attachments/829197797789532181/880302252278034442/okamii_triangle_frame_3.png"
-      }
-      local imageindex = (uj.equipped == "okamiiscollar" and math.random(#randomimages) or 1)
-      message.channel:send{embed = {
-        color = 0x00FF00,
-        title = "Looking at Photo...",
-        description = 'As you gaze into the framed **Photo**, the dog\'s odd triangular shape reminds you of the Pyrowmid you\'ve just been from.' .. (imageindex ~= 1 and " The rotated figure may have been a result from your collar." or ""),
-        image = {url = randomimages[imageindex]}
+        color = 0x00bfff,
+        title = "Looking at the Orb"
+        description = 'This purple orb seems strangely odd. It\'s just floating, not even moving at all. It\'s like it\'s frozen in place. \n \n "Oh, the **Reality Orb**? That\'s an old relic I found while exploring the **Pyrowmid**."'
       }}
     else
       found = false
