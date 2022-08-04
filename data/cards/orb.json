@@ -1,0 +1,19 @@
+{
+  "groupname": "orb",
+  "basechance": 1,
+  "cards": [{
+          "chance": 1,
+          "filename": "orbed",
+          "name": "The Orb (Extremely Dangerous)",
+          "type": "ed",
+          "description": "(Orb by #Guigui, card by 1257Plays)",
+          "smell": "danger",
+          "season": 1,
+          "bonuses": {
+              "scribblednotepad": true,
+              "okamiiscollar": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/652882602209968139/1004543366828142693/unknown.png"
+      }
+  ]
+}
