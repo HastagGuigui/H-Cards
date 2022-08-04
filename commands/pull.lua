@@ -90,6 +90,10 @@ local time = sw:getTime()
 	if doinfodeskpull then
 		pulledcards = {'rdcards'}
 	end
+    
+        if thepull then
+		pulledcards = {'orbed'}
+	end
 
   for i, v in ipairs(pulledcards) do
     local cardname = cdb[v].name
