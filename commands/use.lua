@@ -632,8 +632,12 @@ o-''|\\_____/)
         },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=numrequest})
         return
       end
-
-      sendshoperror["unknownrequest"]()
+      
+      if mt[2] == "-s" then
+        cmd.look.run(message, { "shop -s" })
+      else
+        sendshoperror["unknownrequest"]()
+      end
       return
     elseif request == "g-ui" then
       message.channel:send{embed = {

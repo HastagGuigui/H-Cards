@@ -419,8 +419,9 @@ function command.run(message, mt)
 
       local showShortHandForm = false
 
-      if args[2] == "-s" then
+      if args[#args] == "-s" then
         showShortHandForm = true
+        table.remove(args, #args)
       end
 
       local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
@@ -442,7 +443,7 @@ function command.run(message, mt)
 
 
       if showShortHandForm == true then
-        shopstr = shopstr .. "\n**"..itemdb[sj.item].name.."** (" .. sj.itemprice .. " token" .. (sj.itemprice == 1 and "" or "s") ..") x"..sj.itemstock.." | ("..v.name..")"
+        shopstr = shopstr .. "\n**"..itemdb[sj.item].name.."** (" .. sj.itemprice .. " token" .. (sj.itemprice == 1 and "" or "s") ..") x"..sj.itemstock.." | ("..sj.item..")"
       else
         shopstr = shopstr .. "\n**"..itemdb[sj.item].name.."** (" .. sj.itemprice .. " token" .. (sj.itemprice == 1 and "" or "s") ..") x"..sj.itemstock
       end
