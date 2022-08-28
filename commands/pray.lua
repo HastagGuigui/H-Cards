@@ -2,12 +2,14 @@ local command = {}
 function command.run(message, mt)
 local time = sw:getTime()
   print(message.author.name .. " did !pray")
+  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/pray.json", "")
+  
   if not message.guild then
-    message.channel:send("Sorry, but you cannot pray in DMs!")
+    message.channel:send(lang.dm_message)
     return
   end
   
-  local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
   local cooldown = 4/24
   if uj.equipped == "faithfulnecklace" then
     cooldown = 3/24
@@ -22,21 +24,25 @@ local time = sw:getTime()
     local minutesleft = math.ceil(uj.lastprayer * 1440 - time:toMinutes() + cooldown * 1440)
     local durationtext = ""
     if math.floor(minutesleft / 60) > 0 then
-      durationtext = math.floor(minutesleft / 60) .. " hour"
-      if math.floor(minutesleft / 60) ~= 1 then
-        durationtext = durationtext .. "s"
+      durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+      if lang.needs_plural_s == true then
+        if math.floor(minutesleft / 60) ~= 1 then
+          durationtext = durationtext .. lang.time_plural_s
+        end
       end
     end
     if minutesleft % 60 > 0 then
       if durationtext ~= "" then
-        durationtext = durationtext .. " and "
+        durationtext = durationtext .. lang.time_and
       end
-      durationtext = durationtext .. minutesleft % 60 .. " minute"
-      if minutesleft % 60 ~= 1 then
-        durationtext = durationtext .. "s"
+      durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+      if lang.needs_plural_s == true then
+        if minutesleft % 60 ~= 1 then
+          durationtext = durationtext .. lang.time_plural_s
+        end
       end
     end
-    message.channel:send('Please wait ' .. durationtext .. ' before praying again.')
+    message.channel:send(lang.wait_message_1 .. durationtext .. lang.wait_message_2)
     return
   end
   
@@ -56,6 +62,9 @@ local time = sw:getTime()
   
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 
-  message.channel:send('The Card Gods have listened to your plight. A **Token** appears in your pocket.')
+  message.channel:send(lang.prayed_message)
+  if not uj.togglechecktoken then
+    message.channel:send(lang.checktoken_1 .. uj.tokens .. lang.checktoken_2 .. (uj.tokens ~= 1 and lang.needs_plural_s == true and lang.time_plural_s or "") .. lang.checktoken_3)
+  end
 end
 return command

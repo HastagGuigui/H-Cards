@@ -1,0 +1,85 @@
+{
+    "groupname": "fanmade customs but adofai (real)",
+    "basechance": 3,
+    "cards": [{"chance": 2,
+        "filename": "waddict",
+        "name": "w = addict",
+        "type": "Super Rare",
+        "description": "(Level by PowerFactory)",
+        "smell": "Recurrence",
+        "season": 9,
+        "bonuses": {
+            "filmreel": true,
+            "swirlymarbles": true
+        },
+        "embed": "https://cdn.discordapp.com/attachments/1006816961046519819/1006817055007322212/waddict.gif"
+        },
+		{
+          "chance": 2,
+          "filename": "classykitty",
+          "name": "Classy Kitty",
+          "type": "Super Rare",
+          "description": "(Level by pixelo3o)",
+          "smell": "City Lights",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1006816961046519819/1006817054696951859/classykitty.png"
+        },
+        {
+          "chance": 2,
+          "filename": "dune",
+          "name": "Dune",
+          "type": "Super Rare",
+          "description": "(Level by Axeras)",
+          "smell": "Pyramids",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1006816961046519819/1006817055841992765/dune.png"
+        },
+        {
+          "chance": 2,
+          "filename": "jazzcandy",
+          "name": "Jazz Candy (VIP)",
+          "type": "Super Rare",
+          "description": "(Level by Kin & Rikri)",
+          "smell": "Candy Canes",
+          "season": 9,
+          "bonuses": {
+		    "filmreel": true,
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/1006816961046519819/1006817056362070016/jazzcandy.gif"
+        },
+        {
+          "chance": 2,
+          "filename": "carefree",
+          "name": "Carefree",
+          "type": "Super Rare",
+          "description": "(Level by Colon)",
+          "smell": "Tutorials",
+          "season": 9,
+          "bonuses": {
+		    "duncecap": true,
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1010406533433139240/carefree.png"
+        },
+        {
+          "chance": 2,
+          "filename": "starship",
+          "name": "Starship Showdown",
+          "type": "Super Rare",
+          "description": "(Level by robotups)",
+          "smell": "Hexagons",
+          "season": 9,
+          "bonuses": {
+            "swirlymarbles": true
+          },
+          "embed": "https://cdn.discordapp.com/attachments/829197797789532181/1010409275564236830/starship.png"
+        }
+      ]
+    }
