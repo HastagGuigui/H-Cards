@@ -26,16 +26,22 @@ local time = sw:getTime()
     local durationtext = ""
     if math.floor(minutesleft / 60) > 0 then
       durationtext = math.floor(minutesleft / 60) .. lang.time_hour
-	  if lang.needs_plural_s == true then
-        if math.floor(minutesleft / 60) ~= 1 then durationtext = durationtext .. lang.time_plural_s end
-      end
-	end
+        if lang.needs_plural_s == true then
+          if math.floor(minutesleft / 60) ~= 1 then 
+            durationtext = durationtext .. lang.time_plural_s 
+          end
+        end
+    end
     if minutesleft % 60 > 0 then
-      if durationtext ~= "" then durationtext = durationtext .. lang.time_and end
+      if durationtext ~= "" then
+        durationtext = durationtext .. lang.time_and
+      end
       durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
-	  if lang.needs_plural_s == true then
-        if minutesleft % 60 ~= 1 then durationtext = durationtext .. lang.time_plural_s end
-	  end
+      if lang.needs_plural_s == true then
+        if minutesleft % 60 ~= 1 then
+          durationtext = durationtext .. lang.time_plural_s
+        end
+      end
     end
     
     message.channel:send(formatstring(lang.wait_message, {durationtext}))

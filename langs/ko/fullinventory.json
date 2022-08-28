@@ -6,6 +6,10 @@
 	
 	"embed_title": "전체 인벤토리",
 	"embed_title_season": "전체 인벤토리 (시즌{1})",
+	"season_1": " (시즌",
+	"season_2": ")",
+	"rarity_1": " (",
+	"rarity_2": " 카드)",
 	"embed_your": "당신의",
 	"embed_s": "{1}님의",
 	"embed_contains": " 인벤토리입니다.",

@@ -16,8 +16,12 @@ function command.run(message, mt,bypass)
   if request == "shop" and uj.room == 2 then
   else
 	  local newuj = automove(uj.room,request,message)
-	  if newuj then
-		  uj = newuj
+    if newuj then
+      if newuj == "blacklisted" then
+        return
+      else
+		    uj = newuj
+      end
 	  end
   end
   
@@ -54,7 +58,7 @@ function command.run(message, mt,bypass)
         end
         if not uj.skipprompts then
           ynbuttons(message, {
-            color = uj.embedc,
+            color = 0x85c5ff,
             title = lang.using_machine,
             description = lang.use_machine_1 .. uj.tokens .. lang.use_machine_2,
           },"usemachine",{}, uj.id, uj.lang)
@@ -81,7 +85,7 @@ function command.run(message, mt,bypass)
       else
         if uj.tokens >= 4 then
           ynbuttons(message, {
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.using_machine,
           description = lang.use_machine_four_1 .. uj.tokens .. lang.use_machine_four_2, 
           },"getladder", {}, uj.id, uj.lang)
@@ -99,7 +103,7 @@ function command.run(message, mt,bypass)
       end
       if uj.tokens > 0 then
         ynbuttons(message, {
-        color = uj.embedc,
+        color = 0x85c5ff,
         title = lang.using_hole,
         description = lang.use_hole_1 .. uj.tokens .. lang.use_hole_2, 
         },"usehole", {}, uj.id, uj.lang)
@@ -137,7 +141,7 @@ function command.run(message, mt,bypass)
           wj.labdiscovered = true
         end
         message.channel:send{embed = {
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = embedtitle,
           description = lang.used_ladder,
           image = {
@@ -150,7 +154,7 @@ function command.run(message, mt,bypass)
         return
       else
         message.channel:send{embed = {
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.using_ladder,
           description = lang.using_ladder_small,
           image = {
@@ -174,7 +178,7 @@ function command.run(message, mt,bypass)
     
     elseif request == "table" or (uj.lang ~= "en" and request == lang.request_table) then 
       message.channel:send{embed = {
-        color = uj.embedc,
+        color = 0x85c5ff,
         title = lang.using_table,
         description = lang.use_table,
       }}
@@ -182,7 +186,7 @@ function command.run(message, mt,bypass)
     elseif request == "poster" or request == "catposter" or request == "cat poster" or (uj.lang ~= "en" and request == lang.request_poster_1 or request == lang.request_poster_2 or request == lang.request_poster_3) then 
       if wj.ws ~= 901 then
         message.channel:send{embed = {
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.using_poster_before801,
           image = {
             url = 'https://cdn.discordapp.com/attachments/829197797789532181/838793078574809098/blankwall.png'
@@ -190,7 +194,7 @@ function command.run(message, mt,bypass)
         }}
       else
         message.channel:send{embed = {
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.using_poster,
           description = lang.use_poster,
           image = {
@@ -203,14 +207,14 @@ function command.run(message, mt,bypass)
     elseif request == "mouse hole" or request == "mouse" or request == "mousehole" or (uj.lang ~= "en" and request == lang.request_hole_1 or request == lang.request_hole_2 or request == lang.request_hole_3) then 
       if uj.equipped == "brokenmouse" then
         ynbuttons(message,{
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.using_hole,
           description = message.author.mentionString .. lang.use_hole_mouse,
         },"usemousehole",{},uj.id,uj.lang)
         return
       else
         message.channel:send{embed = {
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.using_hole,
           description = lang.use_hole,
         }}
@@ -221,7 +225,7 @@ function command.run(message, mt,bypass)
       if not uj.lastbox then 
         uj.lastbox = -24
       end
-      local cooldown = (uj.equipped == "stainedgloves") and 2 or 4
+      local cooldown = (uj.equipped == "stainedgloves") and 8 or 11.5
       if uj.lastbox + cooldown > time:toHours() then
         local minutesleft = math.ceil(uj.lastbox * 60 - time:toMinutes() + cooldown * 60)
         local durationtext = ""
@@ -250,7 +254,7 @@ function command.run(message, mt,bypass)
 
       if not next(uj.inventory) then
         message.channel:send{embed = {
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.embed_title,
           description = lang.embed_no_card,
         }}
@@ -259,7 +263,7 @@ function command.run(message, mt,bypass)
       
       if not uj.skipprompts then
         ynbuttons(message,{
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.embed_title,
           description = message.author.mentionString .. lang.confirm_message,
         },"usebox",{}, uj.id, uj.lang)
@@ -392,7 +396,10 @@ o-''|\\_____/)
           if not uj.timesitemgiven then uj.timesitemgiven = 0 end
           if not uj.timesitemreceived then uj.timesitemreceived = 0 end
           if not uj.timesprestiged then uj.timesprestiged = 0 end
-          embeddescription = lang.stats_message .. "\n`" .. lang.stats_timespulled .. uj.timespulled .. "\n" .. lang.stats_timesused .. uj.timesused .. "\n" .. lang.stats_timesitemused .. uj.timesitemused .. "\n" .. lang.stats_timeslooked .. uj.timeslooked .. "\n" .. lang.stats_timesprayed .. uj.timesprayed .. "\n" .. lang.stats_timesshredded .. uj.timesshredded .. "\n" .. lang.stats_timesstored .. uj.timesstored .. "\n" .. lang.stats_timestraded .. uj.timestraded .. "\n" .. lang.stats_timesusedbox .. uj.timesusedbox .. "\n" .. lang.stats_timesdoubleclicked .. uj.timesdoubleclicked .. "\n" .. lang.stats_timesdonated .. uj.tokensdonated .. "\n" .. lang.stats_timesitemgiven .. uj.timesitemgiven .. "\n" .. lang.stats_timesitemreceived .. uj.timesitemreceived .. "\n" .. lang.stats_timescardgiven .. uj.timescardgiven .. "\n" .. lang.stats_timescardreceived .. uj.timescardreceived .. "\n" .. lang.stats_timesthrown .. uj.timesthrown .. "\n" .. lang.stats_timescaught .. uj.timescaught .. "\n" .. lang.stats_timesprestiged .. uj.timesprestiged ..(math.random(100) == 1 and "\n" .. lang.stats_factory or "") .. "`"
+          if not uj.timesrobbed then uj.timesrobbed = 0 end
+          if not uj.timesrobsucceeded then uj.timesrobsucceeded = 0 end
+          if not uj.timesrobfailed then uj.timesrobfailed = 0 end
+          embeddescription = lang.stats_message .. "\n`" .. lang.stats_timespulled .. uj.timespulled .. "\n" .. lang.stats_timesused .. uj.timesused .. "\n" .. lang.stats_timesitemused .. uj.timesitemused .. "\n" .. lang.stats_timeslooked .. uj.timeslooked .. "\n" .. lang.stats_timesprayed .. uj.timesprayed .. "\n" .. lang.stats_timesshredded .. uj.timesshredded .. "\n" .. lang.stats_timesstored .. uj.timesstored .. "\n" .. lang.stats_timestraded .. uj.timestraded .. "\n" .. lang.stats_timesusedbox .. uj.timesusedbox .. "\n" .. lang.stats_timesdoubleclicked .. uj.timesdoubleclicked .. "\n" .. lang.stats_timesdonated .. uj.tokensdonated .. "\n" .. lang.stats_timesitemgiven .. uj.timesitemgiven .. "\n" .. lang.stats_timesitemreceived .. uj.timesitemreceived .. "\n" .. lang.stats_timescardgiven .. uj.timescardgiven .. "\n" .. lang.stats_timescardreceived .. uj.timescardreceived .. "\n" .. lang.stats_timesthrown .. uj.timesthrown .. "\n" .. lang.stats_timescaught .. uj.timescaught .. "\n" .. lang.stats_timesprestiged .. uj.timesprestiged .. "\n" .. lang.stats_timesrobbed .. uj.timesrobbed .. "\n" .. lang.stats_timesrobsucceeded .. uj.timesrobsucceeded .. "\n" .. lang.stats_timesrobfailed .. uj.timesrobfailed ..(math.random(100) == 1 and "\n" .. lang.stats_factory or "") .. "`"
         elseif string.lower(mt[2]) == "credits" then
           embedtitle = lang.credits_title
           embeddescription = 'https://docs.google.com/document/d/1WgUqA8HNlBtjaM4Gpp4vTTEZf9t60EuJ34jl2TleThQ/edit?usp=sharing'
@@ -407,7 +414,7 @@ o-''|\\_____/)
           if uj.tokens > 0 then
             if not uj.skipprompts then
               ynbuttons(message, {
-                color = uj.embedc,
+                color = 0x85c5ff,
                 title = lang.using_terminal_upgrade,
                 description = lang.upgrade_prompt_1 .. uj.tokens .. lang.upgrade_prompt_2,
                 image = {
@@ -445,7 +452,7 @@ o-''|\\_____/)
         end
       end
       message.channel:send{embed = {
-        color = uj.embedc,
+        color = 0x85c5ff,
         title = embedtitle,
         description = embeddescription,
         image = {
@@ -465,7 +472,7 @@ o-''|\\_____/)
       found = false
     end
   end
-
+  
   ----------------------------------------------------------WINDY MOUNTAINS
   if uj.room == 2 then
     local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/mountains.json")
@@ -478,26 +485,65 @@ o-''|\\_____/)
       
     elseif (request == "bridge" or (uj.lang ~= "en" and request == lang.request_bridge)) then 
       message.channel:send{embed = {
-        color = uj.embedc,
+        color = 0x85c5ff,
         title = lang.using_bridge,
         description = lang.use_bridge,
       }}
       
     elseif (request == "shop" or request == "quaintshop" or request == "quaint shop" or (uj.lang ~= "en" and request == lang.request_shop_1 or request == lang.request_shop_2 or request == lang.request_shop_3 or request == lang.request_shop_4))  then 
-      message.channel:send(lang.use_shop)
-      uj.room = 3
-      dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
-    
+      local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+      if uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
+        lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json")
+        local stocksleft = uj.lastrob + 3 - sj.stocknum
+        local stockstring = lang.more_restock_1 .. stocksleft .. lang.more_restock_2
+        if lang.needs_plural_s == true then
+          if stocksleft > 1 then
+            stockstring = stockstring .. lang.plural_s
+          end
+        end
+        local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
+        
+        local durationtext = ""
+        if math.floor(minutesleft / 60) > 0 then
+          durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+          if lang.needs_plural_s == true then
+            if math.floor(minutesleft / 60) ~= 1 then 
+              durationtext = durationtext .. lang.plural_s 
+            end
+          end
+        end
+        if minutesleft % 60 > 0 then
+          if durationtext ~= "" then
+            durationtext = durationtext .. lang.time_and
+          end
+          durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+          if lang.needs_plural_s == true then
+            if minutesleft % 60 ~= 1 then
+              durationtext = durationtext .. lang.plural_s 
+            end
+          end
+        end
+        if uj.lastrob + 3 == sj.stocknum then
+          message.channel:send(lang.blacklist_next_1 .. durationtext .. lang.blacklist_next_2)
+        else
+          message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2 .. durationtext .. lang.blacklist_3)
+        end
+        return
+      else
+        message.channel:send(lang.use_shop)
+        uj.room = 3
+        dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
+      end
     elseif (request == "barrels" or (uj.lang ~= "en" and request == lang.request_barrels)) then 
       message.channel:send{embed = {
-        color = uj.embedc,
+        color = 0x85c5ff,
         title = lang.using_barrels,
         description = lang.use_barrels,
       }}
       
     elseif (request == "clouds" or (uj.lang ~= "en" and request == lang.request_clouds)) then 
       message.channel:send{embed = {
-        color = uj.embedc,
+        color = 0x85c5ff,
         title = lang.using_clouds,
         description = lang.use_clouds,
       }}
@@ -509,6 +555,45 @@ o-''|\\_____/)
   
   if (uj.room == 3) then ----------------------------------------------------------SHOP
     local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/shop/pet.json", "") -- fallback when request is not shop
+    local sj = dpf.loadjson("savedata/shop.json", defaultshopsave)
+    if uj.lastrob + 4 > sj.stocknum and uj.lastrob ~= 0 then
+      lang = dpf.loadjson("langs/" .. uj.lang .. "/rob.json")
+      local stocksleft = uj.lastrob + 3 - sj.stocknum
+      local stockstring = lang.more_restock_1 .. stocksleft .. lang.more_restock_2
+      if lang.needs_plural_s == true then
+        if stocksleft > 1 then
+          stockstring = stockstring .. lang.plural_s
+        end
+      end
+      local minutesleft = math.ceil((26/24 - time:toDays() + sj.lastrefresh) * 24 * 60)
+      
+      local durationtext = ""
+      if math.floor(minutesleft / 60) > 0 then
+        durationtext = math.floor(minutesleft / 60) .. lang.time_hour
+        if lang.needs_plural_s == true then
+          if math.floor(minutesleft / 60) ~= 1 then 
+            durationtext = durationtext .. lang.plural_s 
+          end
+        end
+      end
+      if minutesleft % 60 > 0 then
+        if durationtext ~= "" then
+          durationtext = durationtext .. lang.time_and
+        end
+        durationtext = durationtext .. minutesleft % 60 .. lang.time_minute
+        if lang.needs_plural_s == true then
+          if minutesleft % 60 ~= 1 then
+            durationtext = durationtext .. lang.plural_s 
+          end
+        end
+      end
+      if uj.lastrob + 3 == sj.stocknum then
+        message.channel:send(lang.blacklist_next_1 .. durationtext .. lang.blacklist_next_2)
+      else
+        message.channel:send(lang.blacklist_1 .. stockstring .. lang.blacklist_2 .. durationtext .. lang.blacklist_3)
+      end
+      return
+    end
     if request == "shop" or (uj.lang ~= "en" and request == lang.request_shop_1 or request == lang.request_shop_2 or request == lang.request_shop_3 or request == lang.request_shop_4) then
       local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/shop/buy.json", "")
       checkforreload(time:toDays())
@@ -617,7 +702,7 @@ o-''|\\_____/)
 
         --can buy consumable
         ynbuttons(message,{
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.buying_item_1 .. sname .. lang.buying_item_2,
           description = lang.consumable_desc .. "\n`".. consdb[srequest].description .."`\n" .. lang.consumable_buy_1 .. message.author.id .. lang.consumable_buy_2 .. numrequest .. lang.consumable_buy_3 .. sprice .. lang.consumable_buy_4 .. (sprice ~= 1 and lang.needs_plural_s == true and lang.plural_s or "") .. lang.consumable_buy_5,
         },"buy",{itemtype = "consumable",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=numrequest}, message.author.id, uj.lang)
@@ -661,7 +746,7 @@ o-''|\\_____/)
 
         --can buy item
         ynbuttons(message,{
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.buying_item_1 .. sname .. lang.buying_item_2,
           description = lang.item_desc .. "\n`".. itemdb[srequest].description .."`\n" .. lang.item_buy_1 .. message.author.id .. lang.item_buy_2 .. sprice .. lang.item_buy_3,
         },"buy",{itemtype = "item",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=1}, message.author.id, uj.lang)
@@ -704,7 +789,7 @@ o-''|\\_____/)
 
         --can buy card
         ynbuttons(message,{
-          color = uj.embedc,
+          color = 0x85c5ff,
           title = lang.buying_card_1 .. sname .. lang.buying_card_2,
           description = lang.card_desc .. "\n`".. cdb[srequest].description .."`\n" .. lang.card_buy_1 .. message.author.id .. lang.card_buy_2 .. numrequest .. lang.card_buy_3 .. sprice .. lang.card_buy_4 .. (sprice ~= 1 and lang.needs_plural_s == true and lang.plural_s or "") .. lang.card_buy_5,
         },"buy",{itemtype = "card",sname=sname,sprice=sprice,sindex=sindex,srequest=srequest,numrequest=numrequest}, message.author.id, uj.lang)
@@ -723,7 +808,7 @@ o-''|\\_____/)
       
     elseif request == "wolf" or (uj.lang ~= "en" and request == lang.request_wolf) then
       message.channel:send{embed = {
-        color = uj.embedc,
+        color = 0x85c5ff,
         title = lang.petting_wolf,
         description = lang.petted_wolf,
         image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/882289357128618034/petwolf.gif"}
@@ -731,14 +816,14 @@ o-''|\\_____/)
         
     elseif request == "ghost" or (uj.lang ~= "en" and request == lang.request_ghost) then
       message.channel:send{embed = {
-        color = uj.embedc,
+        color = 0x85c5ff,
         title = lang.petting_ghost,
         description = lang.petted_ghost
       }}
       
     elseif request == "photo" or request == "dog" or (uj.lang ~= "en" and request == lang.request_photo or request == lang.request_dog) then
       message.channel:send{embed = {
-        color = uj.embedc,
+        color = 0x85c5ff,
         title = lang.petting_dog,
         description = lang.petted_dog,
         image = {url = "https://cdn.discordapp.com/attachments/829197797789532181/882287705638203443/okamii_triangle_frame_4.png"}
@@ -768,7 +853,7 @@ o-''|\\_____/)
       if uj.consumables[request] then
         if not uj.skipprompts then
           ynbuttons(message,{
-            color = uj.embedc,
+            color = 0x85c5ff,
             title = lang.using_1 .. consdb[request].name .. lang.using_2,
             description = lang.use_confirm_1 .. consdb[request].name .. lang.use_confirm_2,
           },"useconsumable",{crequest=request,mt=mt},uj.id,uj.lang)

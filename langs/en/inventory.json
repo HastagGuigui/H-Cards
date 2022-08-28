@@ -5,6 +5,10 @@
 	"embed_title": "{1}'s Inventory",
 	"embed_title_season": "{1}'s Inventory (Season {2})",
 	"embed_contains": "{1}, your inventory contains:",
+	"season_1": " (Season",
+	"season_2": ")",
+	"rarity_1": " (",
+	"rarity_2": " Cards)",
 	
 	"embed_page": "(Page {1} of {2})"
 	

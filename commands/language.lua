@@ -172,6 +172,7 @@ function command.run(message, mt)
     uj.pronouns["theirself"] = lang_p.vee_theirself
     end
     message.channel:send(lang.lang_changed)
+    
   elseif request == "" then
     local langname = "English"
 	if uj.lang == "ko" then

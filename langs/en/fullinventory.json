@@ -6,6 +6,10 @@
 	
 	"embed_title": "Full Inventory",
 	"embed_title_season_1": "Full Inventory (Season {1})",
+	"season_1": " (Season",
+	"season_2": ")",
+	"rarity_1": " (",
+	"rarity_2": " Cards)",
 	"embed_your": "Your",
 	"embed_s": "{1}'s",
 	"embed_contains": " inventory contains:",
