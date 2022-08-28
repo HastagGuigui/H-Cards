@@ -1,31 +1,31 @@
 {
 	"needs_plural_s": true,
-	"no_tokens_1": "The **Wolf** frowns. You don't have the ",
-	"no_tokens_2": " **Tokens** required to buy the **",
-	"no_tokens_3": "**!",
+	"no_tokens_1": "**G-UI**, becoming a bit disappointed, tells you: \"Hey man, sorry, but you need ",
+	"no_tokens_2": " **Tokens** to buy that **",
+	"no_tokens_3": "**.\"",
 	
-	"out_of_stock_1": "The **Wolf** frowns. It is currently out of stock of **",
-	"out_of_stock_2": "**.",
+	"out_of_stock_1": "**G-UI**, kinda pensive, simply says: \"Sorry, we're out of stock of **",
+	"out_of_stock_2": "**. Come back again later!\"",
 	
-	"too_many_requested_1": "The **Wolf** frowns. You can only buy ",
-	"too_many_requested_2": " **",
-	"too_many_requested_3": "** at most.",
+	"too_many_requested_1": "**G-UI**, looking sorry, tells you: \"Uh, I... don't have that many cards. I only have ",
+	"too_many_requested_2": " cards of type **",
+	"too_many_requested_3": "** at most.\"",
 	
-	"nopeeking_error_1": "The **Wolf** looks at you with confusion. It might not be selling ",
-	"nopeeking_error_2": ", or it might have misunderstood your request.",
+	"nopeeking_error_1": "**G-UI** stares at you, confused. \"I don't have a ",
+	"nopeeking_error_2": ".\"",
 	
-	"donthave_1": "The **Wolf** looks at you with confusion. It doesn't seem to be selling **",
-	"donthave_2": "**.",
+	"donthave_1": "**G-UI** stares at you, confused. \"Uhhh... I'm not selling any **",
+	"donthave_2": "**s at the moment.\"",
 	
-	"alreadyhave_1": "The **Wolf** looks at you with confusion. You already have the **",
-	"alreadyhave_2": "** item.",
+	"alreadyhave_1": "**G-UI** stares at you, confused. \"I don't think I'm allowed to sell a **",
+	"alreadyhave_2": "** to someone that has one already.\"",
 	
-	"hasfixedmouse": "The **Wolf** frowns. You already own a Mouse.",
+	"hasfixedmouse": "**G-UI** simply tells you: \"You already have a **fixed mouse**, why would you need a **broken** one?\" and **refused** your request.",
 	
-	"oneitemonly": "The **Wolf** frowns. You can only own one of each equippable item.",
+	"oneitemonly": "**G-UI** stares at you, confused. \"Dude, you already have this item. I can't just give you another one.\"",
 	
-	"unknownrequest_1": "The **Wolf** looks at you with confusion. It does not appear to know what ",
-	"unknownrequest_2": " is.",
+	"unknownrequest_1": "**G-UI** stares at you, confused. \"What the \\*beep\\* is a ",
+	"unknownrequest_2": " ?!\"",
 	
 	"buying_item_1": "Buying ",
 	"buying_item_2": "...",
