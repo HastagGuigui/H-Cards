@@ -139,6 +139,8 @@ function command.run(message, mt)
       request = "ghost"
 	elseif uj.lang ~= "en" and request == lang.request_photo then
       request = "photo"
+  elseif request == "g-ui" then
+      request = "g_ui"
     end
     
     
