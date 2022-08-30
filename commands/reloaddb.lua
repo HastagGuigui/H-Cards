@@ -663,8 +663,9 @@ function command.run(message, mt, overwrite)
     addcommand("language",cmd.language)
     addcommand("lang",cmd.language)
     addcommand("langlist",cmd.langlist)
-
+    ---custom h-cards stuff
     addcommand("h",cmd.h)
+    addcommand("info",cmd.info)
     
     _G['handlemessage'] = function (message, content)
 	  if message.author.id ~= client.user.id or content then
