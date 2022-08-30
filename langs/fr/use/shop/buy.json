@@ -1,0 +1,65 @@
+{
+	"needs_plural_s": true,
+	"no_tokens_1": "**G-UI**, becoming a bit disappointed, tells you: \"Hey man, sorry, but you need ",
+	"no_tokens_2": " **Tokens** to buy that **",
+	"no_tokens_3": "**.\"",
+	
+	"out_of_stock_1": "**G-UI**, kinda pensive, simply says: \"Sorry, we're out of stock of **",
+	"out_of_stock_2": "**. Come back again later!\"",
+	
+	"too_many_requested_1": "**G-UI**, looking sorry, tells you: \"Uh, I... don't have that many cards. I only have ",
+	"too_many_requested_2": " cards of type **",
+	"too_many_requested_3": "** at most.\"",
+	
+	"nopeeking_error_1": "**G-UI** stares at you, confused. \"I don't have a ",
+	"nopeeking_error_2": ".\"",
+	
+	"donthave_1": "**G-UI** stares at you, confused. \"Uhhh... I'm not selling any **",
+	"donthave_2": "**s at the moment.\"",
+	
+	"alreadyhave_1": "**G-UI** stares at you, confused. \"I don't think I'm allowed to sell a **",
+	"alreadyhave_2": "** to someone that has one already.\"",
+	
+	"hasfixedmouse": "**G-UI** simply tells you: \"You already have a **fixed mouse**, why would you need a **broken** one?\" and **refused** your request.",
+	
+	"oneitemonly": "**G-UI** stares at you, confused. \"Dude, you already have this item. I can't just give you another one.\"",
+	
+	"unknownrequest_1": "**G-UI** stares at you, confused. \"What the \\*beep\\* is a ",
+	"unknownrequest_2": " ?!\"",
+	
+	"buying_item_1": "Buying ",
+	"buying_item_2": "...",
+	
+	"consumable_desc": "The description for this item reads: ",
+	"consumable_buy_1": "<@",
+	"consumable_buy_2": ">, will you buy ",
+	"consumable_buy_3": " of them for ",
+	"consumable_buy_4": " **Token",
+	"consumable_buy_5": "**?",
+	"plural_s": "s",
+	
+	"item_desc": "The description for this item reads: ",
+	"item_buy_1": "<@",
+	"item_buy_2": ">, will you buy it for ",
+	"item_buy_3": " **Tokens**?",
+
+	"buying_card_1": "Buying ",
+	"buying_card_2": "...",
+	
+	"card_desc": "The description for this card reads: ",
+	"card_buy_1": "<@",
+	"card_buy_2": ">, will you buy ",
+	"card_buy_3": " of them for ",
+	"card_buy_4": " **Token",
+	"card_buy_5": "**?",
+	
+	"error_not_in_stock": "An error has occured. Please make sure that the thing you want is still in stock!",
+	"error_not_enough_tokens": "An error has occured. Please make sure that you have enough tokens!",
+	
+	"bought_message_1": "<@",
+	"bought_message_2": "> successfully bought **",
+	"bought_message_3": "** from the shop.",
+	
+	"denied_message_1": "You decide to not buy the **",
+	"denied_message_2": "**.",
+}

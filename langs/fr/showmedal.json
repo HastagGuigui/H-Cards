@@ -1,0 +1,16 @@
+{
+	"no_arguments": "Désolé, mais la commande c!showmedal nécessite 1 argument. Pour plus d'informations, consultez c!help.",
+	
+	"error_nopeeking_1": "Désolé, mais soit la médaille ",
+	"error_nopeeking_2":  "n'est pas dans la base de données, ou vous ne l'avez pas. Vérifiez que vous l'avez bien écrit!",
+	
+	"no_medal_1": "Désolé, mais la médaille **",
+	"no_medal_2": "** n'est pas dans la base de données. Vérifiez que vous l'avez bien écrit!",
+	"dont_have_1": "Désolé, mais vous n'avez pas obtenu la médaille **",
+	"dont_have_2": "**.",
+	
+	"showing_medal": "Affichage d'une médaille...",
+	"show_medal_1": "La voilà! Votre **",
+	"show_medal_2": "**. Le nom raccourci de cette médaille est **",
+	"show_medal_3": "**.\n\n*La description au revers de la médaille dit:*\n> ",
+}

@@ -1,0 +1,43 @@
+
+{
+	"needs_plural_s": true,
+	
+	"time_hour":  " heure",
+	"time_plural_s": "s",
+	"time_and": " et ",
+	"time_minute": " minute",
+	"wait_message_1": "Veuillez patienter ",
+	"wait_message_2":  " avant d'échanger votre objet équipé.",
+
+	"the_masc": "le",
+	"the_fem": "la",
+	"the_plur": "les",
+
+	"a_masc": "un",
+	"a_fem": "une",
+	"a_plur": "des",
+	
+	"nopeeking_1": "Désolé, mais soit il n'y a pas d'objet nommé ",
+	"nopeeking_2": " dans la base de données, ou vous ne l'avez pas. Vérifiez que vous l'avez bien écrit!",
+	
+	"nodatabase_1": "Désolé, mais l'objet nommé ",
+	"nodatabase_2": " n'existe pas dans la base de données. Vérifiez que vous l'avez bien écrit!",
+	"donthave_1": "Désolé, vous n'avez pas de **",
+	"donthave_2": "** dans votre inventaire.",
+	"already_equipped_1": "Vous avez déjà ",
+	"already_equipped_2": " **",
+	"already_equipped_3": "** équipé!",
+	
+	"prompt_1": "Voulez-vous échanger votre **",
+	"prompt_2": "** actuellement équipé pour **",
+	"prompt_3": "**? Vous ne pouvez faire ça que toutes les 6 heures.",
+	
+	"equipped_1": "a équipé **",
+	"equipped_2": "**.",
+	
+	"no_arguments": "Désolé, mais la commande c!equip nécessite 1 argument. Pour plus d'informations, consultez c!help.",
+	
+	
+	"reaction_not_cooldown": "Une erreur est survenue. Assurez-vous que vous n'avez pas équipé un autre objet!",
+	"stopped": "a annulé le changement de leur objet équipé."
+}

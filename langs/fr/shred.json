@@ -1,0 +1,40 @@
+{
+	"needs_plural_s": true,
+	"plural_s": "s",
+	
+	"no_arguments": "Désolé, mais la commande c!shred nécessite 1 ou 2 arguments. Pour plus d'informations, consultez c!help.",
+	
+	"error_nopeeking_1": "Désolé, mais soit la carte ",
+	"error_nopeeking_2":  "n'est pas dans la base de données, ou vous ne l'avez pas. Vérifiez que vous l'avez bien écrit!",
+	
+	"no_item_1": "Désolé, mais la carte **",
+	"no_item_2": "** n'est pas dans la base de données. Vérifiez que vous l'avez bien écrit!",
+	"dont_have_1": "Désolé, mais vous n'avez pas la carte **",
+	"dont_have_2": "** dans votre Inventaire ou votre Stockage.",
+	
+	"not_enough_1": "Désolé, mais vous n'avez pas assez de cartes **",
+	"not_enough_2": "** dans votre Inventaire.",
+	
+	"shred_confirm_1": "<@",
+	"shred_confirm_2": ">, voulez-vous broyer la/les carte(s) ",
+	"shred_confirm_3": " **",
+	"shred_confirm_4": "**",
+	"shred_confirm_5": "? **Cette opération ne peut pas être annulée.** Appuyez sur le bouton Oui pour confirmer et Non pour refuser.",
+	
+	"reaction_dont_have": "Une erreur est survenue. Vérifiez que vous avez toujours cette carte dans votre Inventaire!",
+	"reaction_not_enough_1": "Une erreur est survenue. Vérifiez que vous avez toujours assez de cartes **",
+	"reaction_not_enough_2": "** dans votre Inventaire!",
+	
+	"shredded_message_1": "<@",
+	"shredded_message_2": "> a broyé avec succès la/les ",
+	"shredded_message_3": " ",
+	"shredded_message_4": " cartes **",
+	"shredded_message_5": "**",
+	"shredded_message_6": ".",
+	
+	"denied_message_1": "<@",
+	"denied_message_2": "> a annulé avec succès le broyage des cartes ",
+	"denied_message_3": " **",
+	"denied_message_4": "**",
+	"denied_message_5": ".",
+}

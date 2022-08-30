@@ -1,0 +1,16 @@
+{
+	"needs_plural_s": true,
+	"plural_s": "s",
+	
+	"no_user_1": "Désolé, je n'ai pas pu trouver d'utilisateur appellé ",
+	"no_user_2": " dans la base de données. Vérifiez que vous l'avez bien écrit, et que cette personne a tirée au moins une carte pour être enregistrée!",
+	
+	"embed_title": "Inventaire complet",
+	"embed_title_season_1": "Inventaire complet (Saison ",
+	"embed_title_season_2": ")",
+	"embed_your": "Votre inventaire",
+	"embed_s": "L'inventaire de ",
+	"embed_contains": " contient:",
+	"embed_cont": " (cont.)"
+	
+}

@@ -1,0 +1,18 @@
+{
+	"no_arguments": "Désolé, mais la commande c!show nécessite 1 argument. Pour plus d'informations, consultez c!help.",
+	
+	"error_nopeeking_1": "Désolé, mais soit la carte ",
+	"error_nopeeking_2":  "n'est pas dans la base de données, ou vous ne l'avez pas. Vérifiez que vous l'avez bien écrit!",
+	
+	"no_item_1": "Désolé, mais la carte **",
+	"no_item_2": "** n'est pas dans la base de données. Vérifiez que vous l'avez bien écrit!",
+	"dont_have_1": "Désolé, mais vous n'avez pas la carte **",
+	"dont_have_2": "** dans votre Inventaire ou votre Stockage.",
+	
+	"embeddescription": "La description à l'arrière de la carte dit:",
+	
+	"showing_card": "Affichage d'une carte...",
+	"show_card_1": "La voici! Votre carte **",
+	"show_card_2": "**. Le nom raccourci de cette carte est **",
+	"show_card_3": "**.",
+}

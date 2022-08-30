@@ -1,0 +1,16 @@
+{
+	"no_arguments": "Désolé, mais la commande c!showitem nécessite 1 argument. Pour plus d'informations, consultez c!help.",
+	
+	"error_nopeeking_1": "Désolé, mais soit l'objet ",
+	"error_nopeeking_2":  "n'est pas dans la base de données, ou vous ne l'avez pas. Vérifiez que vous l'avez bien écrit!",
+	
+	"no_item_1": "Désolé, mais l'objet **",
+	"no_item_2": "** n'est pas dans la base de données. Vérifiez que vous l'avez bien écrit!",
+	"dont_have_1": "Désolé, mais vous n'avez pas de **",
+	"dont_have_2": "**.",
+	
+	"showing_item": "Affichage d'un objet...",
+	"show_item_1": "Le voilà! Votre **",
+	"show_item_2": "**. Le nom raccourci de cet objet est **",
+	"show_item_3": "**.\n\n*La description à l'arrière de l'objet dit:*\n> ",
+}

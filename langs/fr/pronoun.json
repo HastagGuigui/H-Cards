@@ -1,0 +1,65 @@
+{
+	"they_they": "iel",
+	"they_them": "iel",
+	"they_their": "leur",
+	"they_theirs": "leurs",
+	"they_theirself": "iel-même",
+	"they_changed": "Vous allez désormais être identifié avec les pronoms iel/iel.",
+	
+	"he_they": "il",
+	"he_them": "lui",
+	"he_their": "son",
+	"he_theirs": "ses",
+	"he_theirself": "lui-même",
+	"he_changed": "Vous allez désormais être identifié avec les pronoms il/lui.",
+	
+	"she_they": "elle",
+	"she_them": "elle",
+	"she_their": "son",
+	"she_theirs": "ses",
+	"she_theirself": "herself",
+	"she_changed": "Vous allez désormais être identifié avec les pronoms elle/elle.",
+	
+	"it_they": "it",
+	"it_them": "its",
+	"it_their": "its",
+	"it_theirs": "its",
+	"it_theirself": "itself",
+	"it_changed": "Vous allez désormais être identifié avec les pronoms it/its.",
+	
+	"xe_they": "xe",
+	"xe_them": "xem",
+	"xe_their": "xir",
+	"xe_theirs": "xirs",
+	"xe_theirself": "xirself",
+	"xe_changed": "Vous allez désormais être identifié avec les pronoms xe/xem.",
+	
+	"sta_they": "sta",
+	"sta_them": "star",
+	"sta_their": "star",
+	"sta_theirs": "stars",
+	"sta_theirself": "starself",
+	"sta_changed": "Vous allez désormais être identifié avec les pronoms sta/star.",
+	
+	"ze_they": "ze",
+	"ze_them": "zir",
+	"ze_their": "zir",
+	"ze_theirs": "zirs",
+	"ze_theirself": "zirself",
+	"ze_changed": "Vous allez désormais être identifié avec les pronoms ze/zir.",
+	
+	"vee_they": "vee",
+	"vee_them": "veem",
+	"vee_their": "veems",
+	"vee_theirs": "veem's",
+	"vee_theirself": "veeself",
+	"vee_changed": "Vous allez désormais être identifié avec les pronoms vee/veem.",
+	
+	"no_value": "Veuillez donner vos pronoms.",
+	"no_database_1": "Désolé, je ne peux pas trouver les pronoms ",
+	"no_database_2": ". Vérifiez que vous l'avez bien écrit, et que ces pronoms sont dans la c!pronounlist. Si ils n'y sont pas, vous pouvez utiliser c!pronounform pour les proposer.", 
+	
+	"pronounlist_message": "**Pronoms communs:**\nIl, Elle\n\n**Néopronoms:**\nIel, It, Xe, Ze, Sta, Vee\n\n*Si les vôtres n'apparaissent pas, veuillez utiliser c!pronounform",
+	
+	"pronounform_message": "Vos pronoms ne sont pas sur le bot RDCards? Mettez-les dans ce formulaire et on les ajoutera!\n**https://forms.gle/nG57xLc8DPHc5G8m9**"
+}

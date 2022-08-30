@@ -1,0 +1,17 @@
+{
+	"needs_plural_s": true,
+
+	"dm_message": "Désolé, vous ne pouvez pas prier dans les MP!",
+	
+	"time_hour": " heure",
+	"time_plural_s": "s",
+	"time_and": " et ",
+	"time_minute": " minute",
+	"wait_message_1": "Veuillez patienter ",
+	"wait_message_2": " avant de pouvoir prier de nouveau.",
+	
+	"prayed_message": "Les Dieux des Cartes ont répondu à votre souffrance. Un **Jeton** est apparu dans votre poche.",
+	"checktoken_1": "Vous avez désormais ",
+	"checktoken_2": " **Jeton",
+	"checktoken_3": "**.",
+}

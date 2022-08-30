@@ -1,0 +1,18 @@
+{
+	"locations_pyrowmid": "la **Lignramide",
+	"locations_lab": "le **Laboratoire Abandonné",
+	"locations_mountains": "les **Montagnes Venteuses",
+	"locations_shop": "la **Boutique étrange",
+	"locations_hallway": "le **Couloir Sombre",
+	"locations_casino": "le **Casino Douteux",
+	
+	"already_in_1": "Vous êtes déjà dans ",
+	"already_in_2": "**!",
+	
+	"room_changed_1": "Vous êtes maintenant dans **",
+	"room_changed_2": "**.",
+	"room_changed_3": "",
+	
+	"no_room_1": "Désolé, mais \"",
+	"no_room_2": "\" est introuvable. Vérifiez l'orthographe!",
+}
