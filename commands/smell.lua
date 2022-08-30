@@ -28,9 +28,11 @@ function command.run(message, mt)
       shop = lang.smell_shop,
       barrels = lang.smell_barrels,
       clouds = lang.smell_clouds,
-      wolf = lang.smell_wolf,
-      ghost = lang.smell_ghost,
-      photo = lang.smell_photo
+      --wolf = lang.smell_wolf,
+      --ghost = lang.smell_ghost,
+      --photo = lang.smell_photo
+      g_ui = lang.smell_g_ui,
+      orb = lang.smell_orb,
     }
     local itemsmells = {
       nothing = lang.smell_nothing,

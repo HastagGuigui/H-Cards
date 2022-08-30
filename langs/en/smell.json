@@ -21,6 +21,9 @@
 	"smell_wolf": "The **Wolf** smells like a good boy.",
 	"smell_ghost": "Even the **Ghost's** smell tells you it is internally screaming.",
 	"smell_photo": "The **Photo** smells slightly of moss and spite.",
+
+	"smell_g_ui": "**G-UI** smells like a toaster.",
+	"smell_orb": "Even with a glass pane covering it, you can still somehow smell the **Reality Orb**'s strong smell of unoptimized code.",
 	
 	"smell_nothing": "It smells like the **Peculiar Box**.",
 	"smell_rustysword": "The **Rusty Sword**, unsurprisingly, smells like rust.",
