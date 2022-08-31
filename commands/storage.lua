@@ -280,7 +280,7 @@ function command.run(message, mt)
     message.channel:send{
     content = message.author.mentionString .. lang.embed_contains,
     embed = {
-      color = 0x85c5ff,
+      color = uj.embedc,
       title = embedtitle,
       description = storagestring,
       footer = {
@@ -293,7 +293,7 @@ function command.run(message, mt)
     message.channel:send{
     content = message.author.mentionString .. lang.embed_contains,
     embed = {
-      color = 0x85c5ff,
+      color = uj.embedc,
       title = embedtitle,
       description = storagestring,
       footer = {
