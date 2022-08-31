@@ -7,8 +7,7 @@
 	"time_plural_s": "s",
 	"time_and": " et ",
 	"time_minute": " minute",
-	"wait_message_1": "Veuillez patienter ",
-	"wait_message_2":  " pour pouvoir tirer une carte de nouveau.",
+	"wait_message": "Veuillez patienter {1} pour pouvoir tirer une carte de nouveau.",
 	
 	"pulling_card": "Tirage de la carte...",
 	
@@ -18,15 +17,9 @@
 	"pulled_doubleclick": "Double-clic!",
 	"pulled_tripleclick": "Triple-clic!!!",
 	
-	"rdnot_message_1": " a obtenu la carte **What is RD Not?**! La carte **What is RD Not?** a bien été ajoutée à l'inventaire de ",
-	"rdnot_message_2": ". Le nom raccourci de cette carte est **rdnot**.\n",
+	"rdnot_message": "{1} a obtenu la carte **What is RD Not?**! La carte **What is RD Not?** a bien été ajoutée à {2} inventaire. Le nom raccourci de cette carte est **rdnot**.\n",
 	
-	"pulled_message_1": " a obtenu la carte **",
-	"pulled_message_2": "**! La carte **",
-	"pulled_message_3": "** a bien été ajoutée à l'inventaire de ",
-	"pulled_message_4": ". Le nom raccourci de cette carte est **",
-	"pulled_message_5": "**.",
+	"pulled_message": "{1} a obtenu la carte **{2}**! La carte **{2}** a bien été ajoutée à {3} inventaire. Le nom raccourci de cette carte est **{4}**.",
 	
-	"not_in_storage_1": "Vous n'avez pas la carte **",
-	"not_in_storage_2": "** dans votre stockage!",
+	"not_in_storage": "Vous n'avez pas la carte **{1}** dans votre stockage!",
 }
