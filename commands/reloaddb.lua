@@ -825,7 +825,7 @@ function command.run(message, mt, overwrite)
       if plural_s ~= nil and plural_s ~= "" then
         for index, value in ipairs(objectsToAdd) do
           if type(value) == "number" and value ~= 1 then
-            output = baseString:gsub("{"..tostring(index).."s}",tostring(value))
+            output = baseString:gsub("{"..tostring(index).."s}",plural_s)
           end
         end
       end
