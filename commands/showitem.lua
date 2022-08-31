@@ -37,7 +37,7 @@ function command.run(message, mt)
   print("user has item or consumable")
   
   message.channel:send{embed = {
-    color = 0x85c5ff,
+    color = uj.embedc,
     title = lang.showing_item,
     description = lang.show_item_1 .. name .. lang.show_item_2 .. curfilename .. lang.show_item_3 .. description,
     image = {

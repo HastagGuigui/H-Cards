@@ -33,6 +33,7 @@ function command.run(message, mt)
 
     if mt[1] == v.shortname or mt[1] == v.fullname or mt[1] == lang[k] or mt[1] == lang[k.."2"] then
       uj.embedc = v.colorcode
+      message.channel:send{"Successfully changed color to **"..v.fullname.."**!"}
     end
   end
 

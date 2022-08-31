@@ -35,7 +35,7 @@ function command.run(message, mt)
       embeddescription = "\n\n*" .. lang.embeddescription .. "*\n> " .. cdb[curfilename].description
     end
     message.channel:send{embed = {
-      color = 0x85c5ff,
+      color = uj.embedc,
       title = lang.showing_card,
       description = 
       lang.show_card_1 .. cdb[curfilename].name .. lang.show_card_2 .. curfilename .. lang.show_card_3 .. embeddescription,

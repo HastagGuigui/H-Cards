@@ -284,7 +284,7 @@ function command.run(message, mt)
       message.author:send{
         content = contentstring,
         embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = embedtitle,
           description = previnvstring
         },
@@ -298,7 +298,7 @@ function command.run(message, mt)
   message.author:send{
     content = contentstring,
     embed = {
-      color = 0x85c5ff,
+      color = uj.embedc,
       title = embedtitle,
       description = previnvstring
     },

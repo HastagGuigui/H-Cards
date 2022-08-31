@@ -42,7 +42,7 @@ function command.run(message, mt)
     if string.lower(mt[1]) == "pyrowmid" or mt[1] == "" or mt[1] == lang.request_pyrowmid then 
       if wj.ws < 501 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_pyrowmid,
           description = lang.looking_pre_501,
           image = {
@@ -51,7 +51,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 501 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_pyrowmid,
           description = lang.looking_501,
           image = {
@@ -60,7 +60,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 502 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_pyrowmid,
           description = lang.looking_502,
           image = {
@@ -69,7 +69,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 503 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_pyrowmid,
           description = lang.looking_503,
           image = {
@@ -78,7 +78,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 504 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_pyrowmid,
           description = lang.looking_504,
           image = {
@@ -87,7 +87,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 505 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_pyrowmid,
           description = lang.looking_505,
           image = {
@@ -96,7 +96,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 506 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_pyrowmid,
           description = lang.looking_506,
           image = {
@@ -105,7 +105,7 @@ function command.run(message, mt)
         }}
       else
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_pyrowmid,
           description = lang.looking_507,
           image = {
@@ -117,14 +117,14 @@ function command.run(message, mt)
 
     elseif string.lower(mt[1]) == "panda" or string.lower(mt[1]) == "het" or (uj.lang ~= "en" and mt[1] == lang.request_panda) then 
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_panda,
           description = lang.looking_panda,
         }}
         
     elseif string.lower(mt[1]) == "throne" or (uj.lang ~= "en" and mt[1] == lang.request_throne) then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_throne,
           description = lang.looking_throne,
         }}
@@ -132,13 +132,13 @@ function command.run(message, mt)
     elseif string.lower(mt[1]) == "strange machine" or string.lower(mt[1]) == "machine" or (uj.lang ~= "en" and mt[1] == lang.request_machine_1 or mt[1] == lang.request_machine_2 or mt[1] == lang.request_machine_3) then 
       if wj.ws == 506 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_machine,
           description = lang.looking_machine_506,
         }}       
       else
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_machine,
           description = lang.looking_machine,
         }}
@@ -147,13 +147,13 @@ function command.run(message, mt)
     elseif string.lower(mt[1]) == "hole" or (uj.lang ~= "en" and mt[1] == lang.request_hole) then
       if wj.ws < 501 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_hole,
           description = lang.looking_hole_pre_501,
         }}
       elseif wj.ws == 501 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_hole,
           description = lang.looking_hole_501,
           image = {
@@ -162,7 +162,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 502 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_hole,
           description = lang.looking_hole_502,
           image = {
@@ -171,7 +171,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 503 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_hole,
           description = lang.looking_hole_503,
           image = {
@@ -180,7 +180,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 504 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_hole,
           description = lang.looking_hole_504,
           image = {
@@ -189,7 +189,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 505 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_hole,
           description = lang.looking_hole_505,
           image = {
@@ -198,7 +198,7 @@ function command.run(message, mt)
         }}
       elseif wj.ws == 506 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_hole,
           description = lang.looking_hole_506,
           image = {
@@ -207,7 +207,7 @@ function command.run(message, mt)
         }}
       else
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_hole,
           description = lang.looking_hole_507,
           image = {
@@ -218,7 +218,7 @@ function command.run(message, mt)
       
     elseif (string.lower(mt[1]) == "ladder" or (uj.lang ~= "en" and mt[1] == lang.request_ladder)) and wj.labdiscovered  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_ladder,
         description = lang.looking_ladder,
         image = {
@@ -242,7 +242,7 @@ function command.run(message, mt)
         labdesc = lang.looking_lab
       end
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_lab,
         description = labdesc,
         image = {
@@ -259,7 +259,7 @@ function command.run(message, mt)
     elseif (string.lower(mt[1]) == "terminal" or (uj.lang ~= "en" and mt[1] == lang.request_terminal)) and wj.labdiscovered  then  --FONT IS MS GOTHIC AT 24PX, 8PX FOR SMALL FONT
       if wj.ws < 508 then
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_terminal,
           description = lang.looking_terminal_pre_508,
           image = {
@@ -268,7 +268,7 @@ function command.run(message, mt)
         }}
       else
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_terminal,
           description = lang.looking_terminal,
           image = {
@@ -279,7 +279,7 @@ function command.run(message, mt)
     
     elseif (string.lower(mt[1]) == "database" or (uj.lang ~= "en" and mt[1] == lang.request_database)) and wj.labdiscovered  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_database,
         description = lang.looking_database,
         image = {
@@ -293,7 +293,7 @@ function command.run(message, mt)
     
     elseif (string.lower(mt[1]) == "table" or (uj.lang ~= "en" and mt[1] == lang.request_table)) and wj.labdiscovered  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_table,
         description = lang.looking_table,
       }}
@@ -304,7 +304,7 @@ function command.run(message, mt)
         local posterimage = {"https://cdn.discordapp.com/attachments/829197797789532181/838962876751675412/poster1.png","https://cdn.discordapp.com/attachments/829197797789532181/839214962786172928/poster3.png","https://cdn.discordapp.com/attachments/829197797789532181/838791958905618462/poster4.png","https://cdn.discordapp.com/attachments/829197797789532181/838799811813441607/poster6.png","https://cdn.discordapp.com/attachments/829197797789532181/838937070616444949/poster7.png","https://cdn.discordapp.com/attachments/829197797789532181/838819064884232233/poster8.png","https://cdn.discordapp.com/attachments/829197797789532181/838799792267067462/poster9.png","https://cdn.discordapp.com/attachments/829197797789532181/838864622878588989/poster10.png","https://cdn.discordapp.com/attachments/829197797789532181/838870206687346768/poster11.png","https://cdn.discordapp.com/attachments/829197797789532181/839214999884398612/poster12.png","https://cdn.discordapp.com/attachments/829197797789532181/839215023662039060/poster13.png"}
         local cposter = math.random(1, #postermessage)
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_poster,
           description = postermessage[cposter],
           image = {
@@ -313,7 +313,7 @@ function command.run(message, mt)
         }}
       else -- pull away cat poster
         message.channel:send{embed = {
-          color = 0x85c5ff,
+          color = uj.embedc,
           title = lang.looking_at_poster,
           description = lang.looking_poster_901,
           image = {
@@ -324,21 +324,21 @@ function command.run(message, mt)
     
     elseif (string.lower(mt[1]) == "mouse hole" or string.lower(mt[1]) == "mouse" or string.lower(mt[1]) == "mousehole" or (uj.lang ~= "en" and mt[1] == lang.request_mousehole_1 or mt[1] == lang.request_mousehole_2 or mt[1] == lang.request_mousehole_3)) and wj.labdiscovered  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_mousehole,
         description = lang.looking_mousehole,
       }}
       
     elseif (string.lower(mt[1]) == "peculiar box" or string.lower(mt[1]) == "box" or string.lower(mt[1]) == "peculiarbox" or (uj.lang ~= "en" and mt[1] == lang.request_box_1 or mt[1] == lang.request_box_2 or mt[1] == lang.request_box_3)) and wj.labdiscovered  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_box,
         description = lang.looking_box,
       }}
       
     elseif (string.lower(mt[1]) == "scanner") and wj.ws >= 902 then
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = "Looking at scanner...",
         description = 'TODO: scanner look text',
       }}
@@ -354,7 +354,7 @@ function command.run(message, mt)
     local request = string.lower(mt[1]) --why tf didint i do this for all the other ones?????????????????
     if (request == "mountains" or request == "mountain" or request == "windymountains" or request == "the windy mountains" or request == "windy mountains" or mt[1] == "" or (uj.lang ~= "en" and mt[1] == lang.request_mountains_1 or mt[1] == lang.request_mountains_2 or mt[1] == lang.request_mountains_3)) then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_mountains,
         description = lang.looking_mountains,
         image = {
@@ -364,35 +364,35 @@ function command.run(message, mt)
 
     elseif (string.lower(mt[1]) == "pyrowmid" or (uj.lang ~= "en" and mt[1] == lang.request_pyrowmid))  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_pyrowmid,
         description = lang.looking_pyrowmid,
       }}
       
     elseif (string.lower(mt[1]) == "bridge" or (uj.lang ~= "en" and mt[1] == lang.request_bridge))  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_bridge,
         description = lang.looking_bridge,
       }}
       
     elseif (request == "shop" or request == "quaintshop" or request == "quaint shop" or (uj.lang ~= "en" and mt[1] == lang.request_shop_1 or mt[1] == lang.request_shop_2 or mt[1] == lang.request_shop_3 or mt[1] == lang.request_shop_4)) then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_shop,
         description = lang.looking_shop,
       }}
       
     elseif (request == "barrels" or (uj.lang ~= "en" and mt[1] == lang.request_barrels))  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_barrels,
         description = lang.looking_barrels,
       }}
       
     elseif (request == "clouds" or (uj.lang ~= "en" and mt[1] == lang.request_clouds))  then 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_clouds,
         description = lang.looking_clouds,
       }}
@@ -474,7 +474,7 @@ function command.run(message, mt)
       end
 
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_shop,
         description = lang.looking_shop,
         fields = {{
@@ -489,14 +489,14 @@ function command.run(message, mt)
       end
     elseif (request == "wolf" or (uj.lang ~= "en" and request == lang.request_wolf))  then
       message.channel:send{embed = {
-        color = 0x00FF00,
+        color = uj.embedc,
         title = "Looking at Wolf...",
         description = "\"The **Wolf?** Oh, it went back to the RDCards bot\'s world. It told me to take his place, because it can\'t handle two shops at once.\""
         --description = 'The **Wolf** looks up and gives a friendly wave. They seem quite content with where they are at, but you can see a small amount of worry in their eyes.\n\nWhen asked about the **Shop**, the **Wolf** tells you that it\'s going to be restocked in ' .. durationtext .. '.',
       }}
     elseif (request == "ghost")  then 
       message.channel:send{embed = {
-        color = 0x00FF00,
+        color = uj.embedc,
         title = "Looking at Ghost...",
         description = '"Oh yeah, the **Ghost** is gone with the **Wolf**."'
         --description = 'The **Ghost** stands idily by, making sure the shop remains safe. You can tell it is constantly internally screaming.',
@@ -542,20 +542,20 @@ function command.run(message, mt)
         end
       end
       message.channel:send{embed = {
-        color = 0x00bfff,
+        color = uj.embedc,
         title = lang.looking_at_g_ui,
         description = lang.looking_g_ui_1 .. durationtext .. lang.looking_g_ui_2,
       }}
     elseif (request == "orb") then
       if message.author.id == "478831191248601109" then -- anti-null system
         message.channel:send{embed = {
-          color = 0x00bfff,
+          color = uj.embedc,
           title = lang.looking_at_orb,
           description = lang.looking_orb_null
         }}
       else 
         message.channel:send{embed = {
-          color = 0x00bfff,
+          color = uj.embedc,
           title = lang.looking_at_orb,
           description = lang.looking_orb
         }}
@@ -569,7 +569,7 @@ function command.run(message, mt)
       }
       local imageindex = (uj.equipped == "okamiiscollar" and math.random(#randomimages) or 1)
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_photo,
         description = lang.looking_photo .. (imageindex ~= 1 and lang.looking_photo_ookami or ""),
         image = {url = randomimages[imageindex]}
@@ -588,7 +588,7 @@ function command.run(message, mt)
       
     elseif string.lower(mt[1]) == "token" or (uj.lang ~= "en" and mt[1] == lang.request_token) then
       message.channel:send{embed = {
-        color = 0x85c5ff,
+        color = uj.embedc,
         title = lang.looking_at_token,
         description = lang.looking_token,
         image = {
