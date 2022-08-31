@@ -1,0 +1,30 @@
+{
+    "allcolors": "Toutes les couleurs",
+
+    "default": "défaut",
+    "default2": "Bleu RDCards",
+
+    "green": "vert",
+    "green2": "Vert Healion",
+
+    "red": "rouge",
+    "red2": "Rouge Stylisé",
+
+    "blue": "bleu",
+    "blue2": "Bleu Sympa",
+
+    "orange": "orange",
+    "orange2": "Orange Joli",
+
+    "brown": "marron",
+    "brown2": "Marron Beans",
+
+    "yellow": "jaune",
+    "yellow2": "Jaune Clair",
+    
+    "purple": "violet",
+    "purple2": "Violet Amusant",
+
+    "pink": "rose",
+    "pink2": "Rose Chaud"
+}

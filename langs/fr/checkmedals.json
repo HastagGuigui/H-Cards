@@ -1,7 +1,5 @@
 {
 	"congratulations": "Félicitations!",
-	"gotmedal_1": "Après avoir collectioné et stocké plusieurs autres cartes, ",
-	"gotmedal_2": " a obtenu la médaille **\"",
-	"gotmedal_3": "\"**!",
+	"gotmedal": "Après avoir collectioné et stocké plusieurs autres cartes, {1} a obtenu la médaille **\"{2}\"**!",
 	"gotmaestro": "Vous avez aussi débloqué la commande **c!prestige**"
 }

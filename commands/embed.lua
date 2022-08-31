@@ -1,7 +1,21 @@
 local command = {}
+
+local embedcolors = { -- easy to add more: just put a new line!
+  default =  {colorcode = 0x85c5ff, shortname = "default", fullname = "RDCards Blue"},
+  green =    {colorcode = 0x00ff00, shortname = "green", fullname = "Healion Green"},
+  red =      {colorcode = 0xff0000, shortname = "red", fullname = "Stylish Red"},
+  blue =     {colorcode = 0x33ccff, shortname = "blue", fullname = "Nice Blue"},
+  orange =   {colorcode = 0xff8000, shortname = "orange", fullname = "Pretty Orange"},
+  brown =    {colorcode = 0x481b1d, shortname = "brown", fullname = "Beans Brown"},
+  yellow =   {colorcode = 0xfcd68d, shortname = "yellow", fullname = "Light Yellow"},
+  purple =   {colorcode = 0x7c00bf, shortname = "purple", fullname = "Fun Purple"},
+  pink =     {colorcode = 0xff00dc, shortname = "pink", fullname = "Hot Pink"},
+}
+
 function command.run(message, mt)
   print(message.author.name .. " did !embed")
   local uj = dpf.loadjson("savedata/" .. message.author.id .. ".json", defaultjson)
+  local lang = dpf.loadjson("langs/" .. uj.lang .. "/embed.json", "")
   
   if not uj.embedc then
   uj.embedc = 0x85c5ff
@@ -10,31 +24,24 @@ function command.run(message, mt)
   if mt[1] == "" then
   mt[1] = "list"
   end
-  
-  if mt[1] == "RDCards Blue" or mt[1] == "default" then
-  uj.embedc = 0x85c5ff
-  elseif mt[1] == "Healion Green" or mt[1] == "green" then
-  uj.embedc = 0x00ff00
-  elseif mt[1] == "Stylish Red" or mt[1] == "red" then
-  uj.embedc = 0xff0000
-  elseif mt[1] == "Nice Blue" or mt[1] == "blue" then
-  uj.embedc = 0x33ccff
-  elseif mt[1] == "Pretty Orange" or mt[1] == "orange" then
-  uj.embedc = 0xff8000
-  elseif mt[1] == "Beans Brown" or mt[1] == "brown" then
-  uj.embedc = 0x481b1d
-  elseif mt[1] == "Light Yellow" or mt[1] == "yellow" then
-  uj.embedc = 0xfcd68d
-  elseif mt[1] == "Fun Purple" or mt[1] == "purple" then
-  uj.embedc = 0x7c00bf
-  elseif mt[1] == "Hot Pink" or mt[1] == "pink" then
-  uj.embedc = 0xff00dc
-  elseif mt[1] == "list" then
-   message.channel:send{embed = {
-        color = uj.embedc,
-        title = "All Colors",
-       description = "**RDCards Blue** (default)\n**Healion Green** (green)\n**Stylish Red** (red)\n**Nice Blue** (blue)\n**Pretty Orange** (orange)\n**Beans Brown** (brown)\n**Light Yellow** (yellow)\n**Fun Purple** (purple)\n**Hot Pink** (pink)",
-   }}
+
+  local colorDescText = ""
+
+  -- sincerely apologizing for optimising your code
+  for k, v in pairs(embedcolors) do
+    colorDescText = colorDescText.."**"..lang[k].."** ("..lang[k.."2"]..")\n" -- for the description
+
+    if mt[1] == v.shortname or mt[1] == v.fullname or mt[1] == lang[k] or mt[1] == lang[k.."2"] then
+      uj.embedc = v.colorcode
+    end
+  end
+
+  if mt[1] == "list" then
+    message.channel:send{embed = {
+          color = uj.embedc,
+          title = lang.allcolors,
+          description = colorDescText,
+    }}
   end
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 end
