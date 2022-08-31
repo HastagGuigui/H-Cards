@@ -270,7 +270,7 @@ function command.run(message, mt)
 	end
   end
 	
-  local embedtitle = formatstring(message.author.name, {lang.embed_title})
+  local embedtitle = formatstring(lang.embed_title, {message.author.name})
   if filterSeason == true then
 	local filtertitle = ""
 	if multipleSeasons == true then
@@ -286,7 +286,7 @@ function command.run(message, mt)
   end
 
   message.channel:send{
-    content = message.author.mentionString .. lang.embed_contains,
+    content = formatstring(lang.embed_contains, {message.author.mentionString}),
     embed = {
       color = uj.embedc,
       title = embedtitle,
