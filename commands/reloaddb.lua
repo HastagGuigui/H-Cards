@@ -805,6 +805,31 @@ function command.run(message, mt, overwrite)
     end
     -- getshopimage()
 
+    --- This simple function will take a formatted string, for example: <br/>
+    --- `<@{1}> successfully shredded {2} **{3}** card{2s}.` with `{"448560475987509268", 1, "nulldc"}` would give:<br/>
+    --- "<@448560475987509268> successfully shredded 1 **nulldc** card."<br/><br/>
+    ---@param baseString string
+    ---@param objectsToAdd table
+    ---@param plural_s string
+    _G['formatstring'] = function (baseString, objectsToAdd, plural_s)
+      -- Replace the base {X}
+      local output = ""
+      for index, value in ipairs(objectsToAdd) do
+        output = baseString:gsub("{"..tostring(index).."}",tostring(value))
+      end
+
+      -- Replace the {Xs}
+      if plural_s ~= nil and plural_s ~= "" then
+        for index, value in ipairs(objectsToAdd) do
+          if type(value) == "number" and value ~= 1 then
+            output = baseString:gsub("{"..tostring(index).."s}",tostring(value))
+          end
+        end
+      end
+
+      return output
+    end
+
     _G['clearcache'] = function()
       os.remove("test.txt")
       print("deleting card cache")
