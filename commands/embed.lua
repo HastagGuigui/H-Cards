@@ -29,11 +29,11 @@ function command.run(message, mt)
 
   -- sincerely apologizing for optimising your code
   for k, v in pairs(embedcolors) do
-    colorDescText = colorDescText.."**"..lang[k].."** ("..lang[k.."2"]..")\n" -- for the description
+    colorDescText = colorDescText.."**"..lang[k.."2"].."** ("..lang[k]..")\n" -- for the description
 
     if mt[1] == v.shortname or mt[1] == v.fullname or mt[1] == lang[k] or mt[1] == lang[k.."2"] then
       uj.embedc = v.colorcode
-      message.channel:send{"Successfully changed color to **"..v.fullname.."**!"}
+      message.channel:send("Successfully changed color to **"..v.fullname.."**!")
     end
   end
 
