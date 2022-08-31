@@ -36,6 +36,7 @@ function command.run(message, mt)
        description = "**RDCards Blue** (default)\n**Healion Green** (green)\n**Stylish Red** (red)\n**Nice Blue** (blue)\n**Pretty Orange** (orange)\n**Beans Brown** (brown)\n**Light Yellow** (yellow)\n**Fun Purple** (purple)\n**Hot Pink** (pink)",
    }}
   end
+  dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 end
 return command
 
