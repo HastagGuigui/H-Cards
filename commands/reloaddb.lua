@@ -816,16 +816,16 @@ function command.run(message, mt, overwrite)
     ---@param plural_s string
     _G['formatstring'] = function (baseString, objectsToAdd, plural_s)
       -- Replace the base {X}
-      local output = ""
+      local output = baseString
       for index, value in ipairs(objectsToAdd) do
-        output = baseString:gsub("{"..tostring(index).."}",tostring(value))
+        output = output:gsub("{"..tostring(index).."}",tostring(value))
       end
 
       -- Replace the {Xs}
       if plural_s ~= nil and plural_s ~= "" then
         for index, value in ipairs(objectsToAdd) do
           if type(value) == "number" and value ~= 1 then
-            output = baseString:gsub("{"..tostring(index).."s}",plural_s)
+            output = output:gsub("{"..tostring(index).."s}",plural_s)
           end
         end
       end
