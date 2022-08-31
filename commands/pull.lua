@@ -38,7 +38,7 @@ local time = sw:getTime()
 	  end
     end
     
-    message.channel:send(lang.wait_message_1 .. durationtext .. lang.wait_message_2)
+    message.channel:send(formatstring(lang.wait_message, {durationtext}))
     return
   end
   
