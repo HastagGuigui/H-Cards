@@ -1,6 +1,6 @@
 local command = {}
 function command.run(message, mt)
-  print(message.author.name .. " did !h")
+  print(message.author.name .. " did !info")
    message.channel:send{embed = {
         color = 0x00FF00,
         title = "About H-Cards",
