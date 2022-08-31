@@ -31,7 +31,7 @@ function command.run(message, mt)
   uj.embedc = 0xff00dc
   elseif mt[1] == "list" then
    message.channel:send{embed = {
-        color = embedc,
+        color = uj.embedc,
         title = "All Colors",
        description = "**RDCards Blue** (default)\n**Healion Green** (green)\n**Stylish Red** (red)\n**Nice Blue** (blue)\n**Pretty Orange** (orange)\n**Beans Brown** (brown)\n**Light Yellow** (yellow)\n**Fun Purple** (purple)\n**Hot Pink** (pink)",
    }}
