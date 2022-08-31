@@ -1,22 +1,22 @@
 {
-	"dm_message": "Sorry, but you cannot throw in DMs!",
-	"no_arguments": "Sorry, but the c!throw command expects 1 argument. Please see c!help for more details.",
+	"dm_message": "Désolé, mais vous ne pouvez pas lancer en MP!",
+	"no_arguments": "Désolé, mais la commande c!throw nécessite 1 argument. Pour plus d'informations, consultez c!help.",
 	
-	"error_nopeeking_1": "Sorry, but I either could not find ",
-	"error_nopeeking_2": " in the database, or you do not have it. Make sure that you spelled it right!",
-	"no_item_1": "Sorry, but I could not find ",
-	"no_item_2": " in the database. Make sure that you spelled it right!",
-	"dont_have_1": "Sorry, but you don't have **",
-	"dont_have_2": "** in your inventory.",
+	"error_nopeeking_1": "Désolé, mais soit la carte ",
+	"error_nopeeking_2":  "n'est pas dans la base de données, ou vous ne l'avez pas. Vérifiez que vous l'avez bien écrit!",
+	"no_item_1": "Désolé, mais la carte **",
+	"no_item_2": "** n'est pas dans la base de données. Vérifiez que vous l'avez bien écrit!",
+	"dont_have_1": "Désolé, mais vous n'avez pas la carte **",
+	"dont_have_2": "** dans votre Inventaire.",
 	
-	"thrown_message_1": " Type this command within ",
-	"thrown_message_2": " seconds to catch it!\n",
+	"thrown_message_1": " Tapez cette commande dans les ",
+	"thrown_message_2": " prochaînes secondes pour l'attraper!\n",
 	"thrown_command_1": "`c!catch ",
 	"thrown_command_2": "`",
 	
-	"card_fall": "card",
-	"item_fall": "item",
+	"card_fall": "carte",
+	"item_fall": "objet",
 	
-	"fall_message_1": " picked it up and put it back in ",
-	"fall_message_2": " inventory.",
+	"fall_message_1": " l'a récupéré(e) et remis dans ",
+	"fall_message_2": " inventaire."
 }
