@@ -23,7 +23,7 @@ function command.run(message, mt)
     
     dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
 
-    if uj.lastequip + 6 > time:toHours() then
+    if uj.lastequip + 1 > time:toHours() then
       --extremely jank implementation, please make this cleaner if possible
       local minutesleft = math.ceil(uj.lastequip * 60 - time:toMinutes() + 360.00)
       local durationtext = ""
@@ -79,7 +79,7 @@ function command.run(message, mt)
     --woo hoo
     print(uj.equipped)
     if not uj.skipprompts then
-      ynbuttons(message,lang.prompt_1 .. itemdb[uj.equipped].name .. lang.prompt_2 .. itemdb[curfilename].name .. lang.prompt_3,"equip",{newequip = curfilename}, uj.id, uj.lang)
+      ynbuttons(message, formatstring(lang.prompt, {itemdb[uj.equipped].name, itemdb[curfilename].name}),"equip",{newequip = curfilename}, uj.id, uj.lang)
     else
       uj.equipped = curfilename
 	  -- if uj.lang == "ko" then

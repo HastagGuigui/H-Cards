@@ -137,8 +137,7 @@ local time = sw:getTime()
     if i == 3 then title = lang.pulled_tripleclick end
 
     if v == "rdnot" then
-	  if uj.lang == "ko" then
-        message.channel:send("```" .. title .. "\n@" .. message.author.name .. lang.rdnot_message_1 .. lang.rdnot_message_2 .. [[
+	    message.channel:send("```" .. title .. "\n@" .. formatstring(lang.rdnot_message,{message.author.name, uj.pronouns["their"]}) .. [[
 _________________
 | SR            |
 |               |
@@ -148,18 +147,6 @@ _________________
 |     l  l      |
 |             𝅘𝅥𝅯 |
 _________________```]])
-	  else
-	    message.channel:send("```" .. title .. "\n@" .. message.author.name .. lang.rdnot_message_1 .. uj.pronouns["their"] .. lang.rdnot_message_2 .. [[
-_________________
-| SR            |
-|               |
-|    \____/     |
-|    / TT \  /  |
-|   /|____|\/   |
-|     l  l      |
-|             𝅘𝅥𝅯 |
-_________________```]])
-	  end
     elseif not cdb[v].spoiler then
 	    message.channel:send{embed = {
         color = uj.embedc,
@@ -185,7 +172,7 @@ _________________```]])
     end
     if not uj.togglecheckcard then
       if not uj.storage[v] then
-        message.channel:send(lang.not_in_storage_1 .. cardname .. lang.not_in_storage_2)
+        message.channel:send(formatstring(lang.not_in_storage, {cardname}))
       end
     end
   end

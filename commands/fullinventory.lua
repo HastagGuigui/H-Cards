@@ -29,7 +29,7 @@ function command.run(message, mt)
   end
 
   if not filename then
-    message.channel:send(lang.no_user_1 .. mt[1] .. lang.no_user_2)
+    message.channel:send(formatstring(lang.no_user, {mt[1]}))
     return
   end
 
@@ -259,10 +259,10 @@ function command.run(message, mt)
 	else
 		filtertitle = " " .. seasonnum
 	end
-	embedtitle = lang.embed_title_season_1 .. filtertitle .. lang.embed_title_season_2
+	embedtitle = formatstring(lang.embed_title_season, {filtertitle})
   end
   
-  local contentstring = (uj.id == message.author.id and lang.embed_your or "<@" .. uj.id .. ">" .. lang.embed_s) .. lang.embed_contains
+  local contentstring = (uj.id == message.author.id and lang.embed_your or formatstring(lang.embed_s, {"<@" .. uj.id .. ">"})) .. lang.embed_contains
   local previnvstring = ''
   if filterSeason == true then
     if enableShortNames == true then

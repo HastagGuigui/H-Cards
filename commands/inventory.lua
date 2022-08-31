@@ -270,7 +270,7 @@ function command.run(message, mt)
 	end
   end
 	
-  local embedtitle = message.author.name .. lang.embed_title
+  local embedtitle = formatstring(message.author.name, {lang.embed_title})
   if filterSeason == true then
 	local filtertitle = ""
 	if multipleSeasons == true then
@@ -282,35 +282,20 @@ function command.run(message, mt)
 	else
 		filtertitle = " " .. seasonnum
 	end
-	embedtitle = message.author.name .. lang.embed_title_season_1 .. filtertitle .. lang.embed_title_season_2
+	embedtitle = formatstring(lang.embed_title_season, {message.author.name, filtertitle})
   end
 
-  if uj.lang == "ko" then
-    message.channel:send{
-      content = message.author.mentionString .. lang.embed_contains,
-      embed = {
-        color = uj.embedc,
-        title = embedtitle,
-        description = invstring,
-        footer = {
-          text =  lang.embed_page_1 .. maxpn .. lang.embed_page_2 .. pagenumber .. lang.embed_page_3,
-          icon_url = message.author.avatarURL
-        }
+  message.channel:send{
+    content = message.author.mentionString .. lang.embed_contains,
+    embed = {
+      color = uj.embedc,
+      title = embedtitle,
+      description = invstring,
+      footer = {
+        text = formatstring(lang.embed_page, {pagenumber, maxpn}),
+        icon_url = message.author.avatarURL
       }
     }
-  else
-    message.channel:send{
-      content = message.author.mentionString .. lang.embed_contains,
-      embed = {
-        color = uj.embedc,
-        title = embedtitle,
-        description = invstring,
-        footer = {
-          text =  lang.embed_page_1 .. pagenumber .. lang.embed_page_2 .. maxpn .. lang.embed_page_3,
-          icon_url = message.author.avatarURL
-        }
-      }
-    }
-  end
+  }
 end
 return command
