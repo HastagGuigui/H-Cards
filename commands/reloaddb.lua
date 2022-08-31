@@ -666,6 +666,7 @@ function command.run(message, mt, overwrite)
     ---custom h-cards stuff
     addcommand("h",cmd.h)
     addcommand("info",cmd.info)
+    addcommand("embed",cmd.embed)
     
     _G['handlemessage'] = function (message, content)
 	  if message.author.id ~= client.user.id or content then
