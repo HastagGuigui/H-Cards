@@ -27,7 +27,7 @@ function command.run(message, mt,mc)
         local ncn = cdb[newcard].name
         if not cdb[newcard].spoiler then
           mc:send{embed = {
-            color = 0x85c5ff,
+            color = uj.embedc,
             title = lang.congratulations,
             description = lang.gotcard_1 .. message.author.mentionString .. lang.gotcard_2 .. ncn .. lang.gotcard_3 .. ncn .. lang.gotcard_4 ..uj.pronouns["their"].. lang.gotcard_5,
             image = {
