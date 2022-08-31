@@ -10,7 +10,7 @@ function command.run(message, mt)
   
   local request = string.lower(mt[1])
   
-  if request == "english" or request == "en" or request == "eng" or request == "영어" then
+  if request == "english" or request == "en" or request == "eng" or request == "영어" or request == "anglais" then
   uj.lang = "en"
   local lang = dpf.loadjson("langs/" .. uj.lang .. "/lang.json", "")
   local lang_p = dpf.loadjson("langs/" .. uj.lang .. "/pronoun.json", "")
@@ -64,7 +64,7 @@ function command.run(message, mt)
     uj.pronouns["theirself"] = lang_p.vee_theirself
   end
   message.channel:send(lang.lang_changed)
-  elseif request == "한국어" or request == "korean" or request == "ko" or request == "kr" or request == "kor" then
+  elseif request == "한국어" or request == "korean" or request == "ko" or request == "kr" or request == "kor" or request =="coréen" then
     uj.lang = "ko"
     local lang = dpf.loadjson("langs/" .. uj.lang .. "/lang.json", "")
 	local lang_p = dpf.loadjson("langs/" .. uj.lang .. "/pronoun.json", "")
