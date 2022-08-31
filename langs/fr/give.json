@@ -9,7 +9,7 @@
 	"same_user": "Désolé, mais vous ne pouvez pas donner quelque chose à vous-même!",
 	
 	"nopeeking_1": "Désolé, mais soit la carte ",
-	"nopeeking_2":  "n'est pas dans la base de données, ou elle n'est pas dans votre inventaire. Vérifiez que vous l'avez bien écrit!",
+	"nopeeking_2": " n'est pas dans la base de données, ou elle n'est pas dans votre inventaire. Vérifiez que vous l'avez bien écrit!",
 	
 	"nodatabase_1": "Désolé, mais la carte ",
 	"nodatabase_2": " est introuvable dans la base de données. Vérifiez que vous l'avez bien écrit!",

@@ -1,27 +1,27 @@
 {
-	"dm_message": "Sorry, but you cannot trade cards in DMs!",
-	"no_arguments": "Sorry, but the c!trade command expects 3 arguments. Please see c!help for more details.",
+	"dm_message": "Désolé, mais vous ne pouvez pas échanger de cartes en MP!",
+	"no_arguments": "Désolé, mais la commande c!trade nécessite 3 arguments. Pour plus d'informations, consultez c!help.",
 	
-	"no_user_1": "Sorry, but I could not find a user named ",
-	"no_user_2": " in the database. Make sure that you have spelled it right, and that they have at least pulled a card to register!",
-	"same_user": "Sorry, you cannot trade with yourself!",
+	"no_user_1": "Désolé, je n'ai pas pu trouver d'utilisateur appellé ",
+	"no_user_2": " dans la base de données. Vérifiez que vous l'avez bien écrit, et que cette personne a tirée au moins une carte pour être enregistrée!",
+	"same_user": "Désolé, mais vous ne pouvez pas échanger avec vous-même!",
 	
-	"no_item_nopeeking_1": "Sorry, but I either could not find the ",
-	"no_item_nopeeking_2": " card in the database, or ",
+	"no_item_nopeeking_1": "Désolé, mais soit la carte ",
+	"no_item_nopeeking_2": " n'est pas dans la base de données, ou elle n'est pas dans",
 	
-	"no_item1_nopeeking": "you do not have it. Make sure that you spelled it right!",
+	"no_item1_nopeeking": " votre inventaire. Vérifiez que vous l'avez bien écrit!",
 	
-	"no_item_1": "Sorry, but I could not find the ",
-	"no_item_2": " card in the database. Make sure that you spelled it right!",
+	"no_item_1": "Désolé, mais la carte ",
+	"no_item_2": " est introuvable dans la base de données. Vérifiez que vous l'avez bien écrit!",
 	
-	"no_item2_nopeeking": " does not have it. Make sure that you spelled it right!",
+	"no_item2_nopeeking": " son inventaire. Vérifiez que vous l'avez bien écrit!",
 	
-	"dont_have_user1_1": "Sorry, but you don't have the **",
-	"dont_have_user1_2": "** card in your inventory.",
-	"dont_have_user2_1": "Sorry, but ",
-	"dont_have_user2_2": " doesn't have the **",
-	"dont_have_user2_3": "** card in ",
-	"dont_have_user2_4": " inventory.",
+	"dont_have_user1_1": "Désolé, mais la carte **",
+	"dont_have_user1_2": "** n'est pas dans votre inventaire. Vérifiez que vous l'avez bien écrit!",
+	"dont_have_user2_1": "Désolé, mais ",
+	"dont_have_user2_2": " n'a pas la carte **",
+	"dont_have_user2_3": "** dans ",
+	"dont_have_user2_4": " inventaire.",
 	
 	"confirm_message_1": ">, <@",
 	"confirm_message_2": "> wants to trade ",
