@@ -108,16 +108,22 @@ function command.run(message, mt)
   local isplural = numcards ~= 1 and lang.needs_plural_s == true and lang.plural_s or ""
   local isplural2 = numcards ~= 1 and lang2.needs_plural_s == true and lang2.plural_s or ""
   
-  if uj.lang == "ko" then
-    _G['giftedmessage'] = lang.gifted_message_1 .. uj2.id .. lang.gifted_message_2 .. cdb[curfilename].name .. lang.gifted_message_3 .. numcards .. lang.gifted_message_4 .. lang.gifted_message_5
-  else
-    _G['giftedmessage'] = lang.gifted_message_1 .. numcards .. lang.gifted_message_2 .. cdb[curfilename].name .. lang.gifted_message_3 .. isplural .. lang.gifted_message_4 .. uj2.id .. lang.gifted_message_5
-  end
-  if uj2.lang == "ko" then
-    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. cdb[curfilename].name .. lang2.recieved_message_3 .. numcards .. lang2.recieved_message_4 .. lang2.recieved_message_5
-  else
-    _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. numcards .. lang2.recieved_message_3 .. cdb[curfilename].name .. lang2.recieved_message_4 .. isplural2 .. lang2.recieved_message_5
-  end
+  --if uj.lang == "ko" then
+  --  _G['giftedmessage'] = lang.gifted_message_1 .. uj2.id .. lang.gifted_message_2 .. cdb[curfilename].name .. lang.gifted_message_3 .. numcards .. lang.gifted_message_4 .. lang.gifted_message_5
+  --else
+  --  _G['giftedmessage'] = lang.gifted_message_1 .. numcards .. lang.gifted_message_2 .. cdb[curfilename].name .. lang.gifted_message_3 .. isplural .. lang.gifted_message_4 .. uj2.id .. lang.gifted_message_5
+  --end
+  -- numcards, cdb[curfilename].name, isplural, uj2.id
+
+  _G['giftedmessage'] = formatstring(lang.giftedmessage, {numcards, cdb[curfilename].name, uj2.id}, lang.plural_s)
+
+  -- if uj2.lang == "ko" then
+    -- _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. cdb[curfilename].name .. lang2.recieved_message_3 .. numcards .. lang2.recieved_message_4 .. lang2.recieved_message_5
+  -- else
+    -- _G['recievedmessage'] = lang2.recieved_message_1 .. uj.id .. lang2.recieved_message_2 .. numcards .. lang2.recieved_message_3 .. cdb[curfilename].name .. lang2.recieved_message_4 .. isplural2 .. lang2.recieved_message_5
+  -- end
+  -- uj.id, numcards, cdb[curfilename].name, isplural2
+  _G['recievedmessage'] = formatstring(lang2.recieved_message, {uj.id, numcards, cdb[curfilename].name}, lang2.plural_s)
   if uj.lang == uj2.lang then
     message.channel:send {
       content = giftedmessage
