@@ -17,7 +17,7 @@
 	
 	"plural_s": "s",
 	
-	"gifted_message_1": "You have gifted {1} **{2}** card{1s} to <@{3}>.",
+	"gifted_message": "You have gifted {1} **{2}** card{1s} to <@{3}>.",
 	
-	"recieved_message_1": "<@{1}> has gifted you {2} **{3}** card{2s}."
+	"recieved_message": "<@{1}> has gifted you {2} **{3}** card{2s}."
 }

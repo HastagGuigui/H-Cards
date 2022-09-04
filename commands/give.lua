@@ -62,9 +62,9 @@ function command.run(message, mt)
   
   if not curfilename then
     if nopeeking then
-      message.channel:send(lang.no_item_nopeeking_1 .. thing_argument .. lang.no_item_nopeeking_2)
+      message.channel:send(formatstring(lang.no_item_nopeeking, {thing_argument}))
     else
-      message.channel:send(lang.no_item_1 .. thing_argument .. lang.no_item_2)
+      message.channel:send(formatstring(lang.no_item, {thing_argument}))
     end
     return
   end
@@ -72,16 +72,16 @@ function command.run(message, mt)
   if not uj.inventory[curfilename] then
     print("user doesnt have card")
     if nopeeking then
-      message.channel:send(lang.no_item_nopeeking_1 .. thing_argument .. lang.no_item_nopeeking_2)
+      message.channel:send(formatstring(lang.no_item_nopeeking, {thing_argument}))
     else
-      message.channel:send(lang.dont_have_1 .. cdb[curfilename].name .. lang.dont_have_2)
+      message.channel:send(formatstring(lang.dont_have, {cdb[curfilename].name}))
     end
     return
   end
   
   if not (uj.inventory[curfilename] >= numcards) then
     print("user doesn't have enough cards")
-    message.channel:send(lang.not_enough_1 .. cdb[curfilename].name .. lang.not_enough_2)
+    message.channel:send(formatstring( lang.not_enough, { cdb[curfilename].name}) )
     return
   end
 

@@ -1,9 +1,7 @@
 {
 	"lang_changed": "Language défini sur Français!",
-	"no_value_1": "Veuillez taper une langue. Votre langue actuelle est ",
-	"no_value_2": ". Vous pouvez accéder à une liste des langues disponibles avec c!langlist.",
-	"no_database_1": "Désolé, mais la langue ",
-	"no_database_2": " ne se trouve pas dans la base de données. Vérifiez l'orthographe, ou que votre langue soit dans c!langlist.",
+	"no_value": "Veuillez taper une langue. Votre langue actuelle est {1}. Vous pouvez accéder à une liste des langues disponibles avec c!langlist.",
+	"no_database": "Désolé, mais la langue {1} ne se trouve pas dans la base de données. Vérifiez l'orthographe, ou que votre langue soit dans c!langlist.",
 	
 	"langlist_message": "**Liste de langues**\n\n**Anglais** (en) - par l'équipe de RDCards\n**Coréen (한국어)** (ko) - par sjk, BIrDIS (et un grand merci à BluPen, Mush, et DDockson!)\n**Français** (fr) - par #Guigui",
 }

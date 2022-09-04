@@ -180,9 +180,9 @@ function command.run(message, mt)
   if uj.lang == "fr" then
     langname = "Français"
   end
-    message.channel:send(lang.no_value_1 .. langname .. lang.no_value_2)
+    message.channel:send(formatstring(lang.no_value, {langname}))
   else
-    message.channel:send(lang.no_database_1 .. mt[1] .. lang.no_database_2)
+    message.channel:send(formatstring(lang.no_database, {mt[1]}))
   end
 
   dpf.savejson("savedata/" .. message.author.id .. ".json", uj)

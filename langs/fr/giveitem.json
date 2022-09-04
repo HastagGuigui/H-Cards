@@ -4,33 +4,20 @@
 	"dm_message": "Désolé, vous ne pouvez pas donner d'objets en MP!",
 	"no_arguments": "Désolé, mais la commande c!giveitem nécessite 2 ou 3 arguments. Pour plus d'informations, consultez c!help.",
 
-	"no_user_1": "Désolé, je n'ai pas pu trouver d'utilisateur appellé ",
-	"no_user_2": " dans la base de données. Vérifiez que vous l'avez bien écrit, et que cette personne a tirée au moins une carte pour être enregistrée!",
+	"no_user": "Désolé, je n'ai pas pu trouver d'utilisateur appellé {1} dans la base de données. Vérifiez que vous l'avez bien écrit, et que cette personne a tirée au moins une carte pour être enregistrée!",
 	"same_user": "Désolé, mais vous ne pouvez pas donner quelque chose à vous-même!",
 	
-	"nopeeking_1": "Désolé, mais soit l'objet ",
-	"nopeeking_2":  "n'est pas dans la base de données, ou elle n'est pas dans votre inventaire. Vérifiez que vous l'avez bien écrit!",
+	"nopeeking": "Désolé, mais soit l'objet {1} n'est pas dans la base de données, ou elle n'est pas dans votre inventaire. Vérifiez que vous l'avez bien écrit!",
 	
-	"nodatabase_1": "Désolé, mais l'objet ",
-	"nodatabase_2": " est introuvable dans la base de données. Vérifiez que vous l'avez bien écrit!",
+	"nodatabase": "Désolé, mais l'objet {1} est introuvable dans la base de données. Vérifiez que vous l'avez bien écrit!",
 	
-	"dont_have_1": "Désolé, mais l'objet **",
-	"dont_have_2": "** n'est pas dans votre inventaire.",
+	"dont_have": "Désolé, mais l'objet **{1}** n'est pas dans votre inventaire.",
 	
-	"not_enough_1": "Désolé, mais vous n'avez pas assez de **",
-	"not_enough_2": "** dans votre inventaire.",
+	"not_enough": "Désolé, mais vous n'avez pas assez de **{1}** dans votre inventaire.",
 	
 	"plural_s": "s",
 	
-	"gifted_message_1": "Vous avez donné l'/les objet(s) ",
-	"gifted_message_2": "**",
-	"gifted_message_3": "**",
-	"gifted_message_4": " à <@",
-	"gifted_message_5": ">.",
+	"gifted_message": "Vous avez donné l'/les {1} **{2}**{1s} à <@{3}>.",
 	
-	"recieved_message_1": "<@",
-	"recieved_message_2": "> vous a offert l'/les objet(s) ",
-	"recieved_message_3": "**",
-	"recieved_message_4": "**",
-	"recieved_message_5": ".",
+	"recieved_message": "<@{1}> vous a offert l'/les {2} **{3}**{2s}."
 }
