@@ -3,38 +3,21 @@
 	
 	"no_arguments": "Désolé, mais la commande c!store nécessite 1 ou 2 arguments. Pour plus d'informations, consultez c!help.",
 	
-	"no_item_nopeeking_1": "Désolé, mais soit la carte ",
-	"no_item_nopeeking_2": " n'est pas dans la base de données, ou vous ne l'avez pas. Vérifiez que vous l'avez bien écrit!",
-	"no_item_1": "Désolé, mais la carte **",
-	"no_item_2": "** n'est pas dans la base de données. Vérifiez que vous l'avez bien écrit!",
+	"no_item_nopeeking": "Désolé, mais soit la carte {1} n'est pas dans la base de données, ou vous ne l'avez pas. Vérifiez que vous l'avez bien écrit!",
+	"no_item": "Désolé, mais la carte **{1}** n'est pas dans la base de données. Vérifiez que vous l'avez bien écrit!",
 	
-	"dont_have_1": "Désolé, mais vous n'avez pas la carte **",
-	"dont_have_2": "** dans votre Inventaire.",
+	"dont_have": "Désolé, mais vous n'avez pas la carte **{1}** dans votre Inventaire.",
 	
-	"not_enough_1": "Désolé, mais vous n'avez pas assez de cartes **",
-	"not_enough_2": "** dans votre Inventaire.",
+	"not_enough": "Désolé, mais vous n'avez pas assez de cartes **{1}** dans votre Inventaire.",
 	
-	"confirm_message_1": "<@",
-	"confirm_message_2": ">, voulez-vous mettre votre carte ",
-	"confirm_message_3": " **",
-	"confirm_message_4": "**",
 	"plural_s": "s",
-	"confirm_message_5": " dans le Stockage? Cette opération ne peut pas être annulée. Appuyez sur le bouton Oui pour confirmer et Non pour refuser.",
+
+	"confirm_message": "<@{1}>, voulez-vous mettre votre {2} carte{2s} **{3}** dans le Stockage? Cette opération ne peut pas être annulée. Appuyez sur le bouton Oui pour confirmer et Non pour refuser.",
 	
-	"stored_message_1": "<@",
-	"stored_message_2": "> a mis avec succès sa carte",
-	"stored_message_3": " ",
-	"stored_message_4": " **",
-	"stored_message_5": "**",
-	"stored_message_6": " dans le Stockage.",
+	"stored_message": "<@{1}> a mis avec succès {3} carte{3s} **{4}** dans le Stockage.",
 	
 	"reaction_dont_have": "Une erreur est survenue. Vérifiez que vous avez toujours cette carte dans votre Inventaire!",
-	"reaction_not_enough_1": "Une erreur est survenue. Vérifiez que vous avez toujours assez de cartes **",
-	"reaction_not_enough_2": "** dans votre Inventaire!",
+	"reaction_not_enough": "Une erreur est survenue. Vérifiez que vous avez toujours assez de cartes **{1}** dans votre Inventaire!",
 	
-	"reaction_stopped_1": "<@",
-	"reaction_stopped_2": "> a annulé avec succès le stockage des cartes ",
-	"reaction_stopped_3": " **",
-	"reaction_stopped_4": "**",
-	"reaction_stopped_5": ".",
+	"reaction_stopped": "<@{1}> a annulé avec succès le stockage de {2} carte{2s} **{3}**.",
 }
