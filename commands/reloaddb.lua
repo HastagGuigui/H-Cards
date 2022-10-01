@@ -817,9 +817,13 @@ function command.run(message, mt, overwrite)
     _G['formatstring'] = function (baseString, objectsToAdd, plural_s)
       -- Replace the base {X}
       local output = baseString
+
+      print(output)
+      
       for index, value in ipairs(objectsToAdd) do
         output = output:gsub("{"..tostring(index).."}",tostring(value))
       end
+
 
       -- Replace the {Xs}
       if plural_s ~= nil and plural_s ~= "" then
@@ -829,6 +833,7 @@ function command.run(message, mt, overwrite)
           end
         end
       end
+
 
       return output
     end
