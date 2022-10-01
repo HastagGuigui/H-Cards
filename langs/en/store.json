@@ -11,13 +11,13 @@
 	"not_enough": "Sorry, but you do not have enough **{1}** cards in your inventory.",
 
 	"plural_s": "s",
-	
+
 	"confirm_message": "<@{1}>, do you want to put your {2} **{3}** card{2s} into storage? This cannot be undone. Click the Yes button to confirm and No to deny.",
-	
+
 	"stored_message": "<@{1}> successfully put {2} {3} **{4}** card{3s} into storage.",
-	
+
 	"reaction_dont_have": "An error has occured. Please make sure that you still have the card in your inventory!",
 	"reaction_not_enough": "An error has occured. Please make sure that you still have enough **{1}** cards in your inventory!",
-	
-	"reaction_stopped": "<@{1}> has successfully stopped the storage of {2} **{3}** card{3s}.",
+
+	"reaction_stopped": "<@{1}> has successfully stopped the storage of {2} **{3}** card{2s}.",
 }

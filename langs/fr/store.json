@@ -11,7 +11,7 @@
 	"not_enough": "Désolé, mais vous n'avez pas assez de cartes **{1}** dans votre Inventaire.",
 	
 	"plural_s": "s",
-	
+
 	"confirm_message": "<@{1}>, voulez-vous mettre votre {2} carte{2s} **{3}** dans le Stockage? Cette opération ne peut pas être annulée. Appuyez sur le bouton Oui pour confirmer et Non pour refuser.",
 	
 	"stored_message": "<@{1}> a mis avec succès {3} carte{3s} **{4}** dans le Stockage.",
@@ -19,5 +19,5 @@
 	"reaction_dont_have": "Une erreur est survenue. Vérifiez que vous avez toujours cette carte dans votre Inventaire!",
 	"reaction_not_enough": "Une erreur est survenue. Vérifiez que vous avez toujours assez de cartes **{1}** dans votre Inventaire!",
 	
-	"reaction_stopped": "<@{1}> a annulé avec succès le stockage des {2} carte{2s} **{3}**.",
+	"reaction_stopped": "<@{1}> a annulé avec succès le stockage de {2} carte{2s} **{3}**.",
 }

@@ -43,7 +43,7 @@ function command.run(message, mt)
   end
 
   if uj.inventory[item1] < numcards then
-    message.channel:send(lang.not_enough, {cdb[item1].name})
+    message.channel:send(formatstring(lang.not_enough, {cdb[item1].name}))
       return
   end
   
@@ -53,11 +53,7 @@ function command.run(message, mt)
   end
 
   if not uj.skipprompts then
-    if uj.lang == "ko" then
-		ynbuttons(message,lang.confirm_message_1 .. uj.id .. lang.confirm_message_2 .. lang.confirm_message_3 .. cdb[item1].name .. lang.confirm_message_4 .. numcards .. lang.confirm_message_5, "store", {numcards = numcards, item1 = item1}, uj.id, uj.lang)
-	else
-		ynbuttons(message,formatstring(lang.confirm_message, {uj.id, numcards, cdb[item1].name}, lang.plural_s), "store", {numcards = numcards, item1 = item1}, uj.id, uj.lang)
-	end
+    ynbuttons(message,formatstring(lang.confirm_message, {uj.id, numcards, cdb[item1].name}, lang.plural_s), "store", {numcards = numcards, item1 = item1}, uj.id, uj.lang)
   else
     uj.inventory[item1] = uj.inventory[item1] - numcards
     if uj.inventory[item1] == 0 then uj.inventory[item1] = nil end
@@ -65,12 +61,9 @@ function command.run(message, mt)
     uj.storage[item1] = uj.storage[item1] and uj.storage[item1] + numcards or numcards
     uj.timesstored = uj.timesstored and uj.timesstored + numcards or numcards
 	
-	if uj.lang == "ko" then
-		message.channel:send(lang.stored_message_1 .. uj.id .. lang.stored_message_2 .. lang.stored_message_3 .. lang.stored_message_4 .. cdb[item1].name .. lang.stored_message_5 .. numcards .. lang.stored_message_6)
-	else
-		message.channel:send(formatstring(lang.stored_message, {uj.id, uj.pronouns["their"], numcards, cdb[item1].name}, lang.plural_s))
-    end
-	dpf.savejson(ujf, uj)
+    message.channel:send(formatstring(lang.stored_message, {uj.id, uj.pronouns["their"], numcards, cdb[item1].name}, lang.plural_s))
+
+    dpf.savejson(ujf, uj)
     cmd.checkcollectors.run(message, mt)
     cmd.checkmedals.run(message, mt)
   end
