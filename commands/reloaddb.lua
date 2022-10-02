@@ -830,6 +830,8 @@ function command.run(message, mt, overwrite)
         for index, value in ipairs(objectsToAdd) do
           if type(value) == "number" and value ~= 1 then
             output = output:gsub("{"..tostring(index).."s}",plural_s)
+          else
+            output = output:gsub("{"..tostring(index).."s}","")
           end
         end
       end
