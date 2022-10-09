@@ -12,6 +12,10 @@ function command.run(message, mt)
   local success = false
   local request = string.lower(mt[1])
   local newroom = 0
+
+  if uj.lastrob == nil then
+    uj.lastrob = -24
+  end
   
   --0: pyrowmid
   --1: lab
