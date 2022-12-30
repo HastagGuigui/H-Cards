@@ -720,7 +720,7 @@ function command.run(message, mt, overwrite)
           end)
           if not status then
             print("uh oh")
-            message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+            message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@448560475987509268> please fix this thanks)")
           end
           break
         end
@@ -827,12 +827,17 @@ function command.run(message, mt, overwrite)
     ---@param plural_s string
     _G['formatstring'] = function (baseString, objectsToAdd, plural_s)
       -- Replace the base {X}
+      if baseString == nil then
+        return "[ERROR: STRING NOT FOUND]"
+      end
       local output = baseString
 
       print(output)
       
       for index, value in ipairs(objectsToAdd) do
-        output = output:gsub("{"..tostring(index).."}",tostring(value))
+        if value ~= nil then
+          output = output:gsub("{"..tostring(index).."}",tostring(value))
+        end
       end
 
 

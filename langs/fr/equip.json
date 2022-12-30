@@ -16,7 +16,7 @@
 	
 	"prompt": "Voulez-vous échanger votre **{1}** actuellement équipé pour **{2}**? Vous ne pouvez faire ça que toutes les 6 heures.",
 	
-	"equipped": "{1} a équipé **{2}**.",
+	"equipped": "<@{1}> a équipé **{2}**.",
 	
 	"no_arguments": "Désolé, mais la commande c!equip nécessite 1 argument. Pour plus d'informations, consultez c!help.",
 	

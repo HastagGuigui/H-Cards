@@ -16,11 +16,11 @@
 	
 	"prompt": "Would you like to change your equipped item from **{1}** to **{2}**? This can be done once every 6 hours.",
 	
-	"equipped": "{1} successfully set **{2}** as {3} equipped item.",
+	"equipped": "<@{1}> successfully set **{2}** as {3} equipped item.",
 	
 	"no_arguments": "Sorry, but the c!equip command expects 1 argument. Please see c!help for more details.",
 	
 	"reaction_not_cooldown": "An error has occured. Please make sure that you didn't recently equip another item!",
 	
-	"stopped_1": "{1} has successfully stopped the changing of {2} equipped item."
+	"stopped": "{1} has successfully stopped the changing of {2} equipped item."
 }

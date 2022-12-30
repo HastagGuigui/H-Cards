@@ -4,8 +4,8 @@
 	"embed_contains": "{1}, vous possédez les objets suivants:",
 	"embed_title": "Objets de {1}",
 	
-	"embed_page_1": "(Page {1} sur {2})",
+	"embed_page": "(Page {1} sur {2})",
 	
-	"embed_token_1": "Vous avez aussi {1} **Jeton{1s}**.",
-	"plural_s": "s",
+	"embed_token": "Vous avez aussi {1} **Jeton{1s}**.",
+	"plural_s": "s"
 }
