@@ -1,0 +1,77 @@
+{
+    "needs_plural_s": true,
+    "plural_s": "s",
+
+    "dm_message": "Désolé, vous ne pouvez pas voler en MPs!",
+    
+	"more_restock_1": "encore ",
+    "more_restock_2": " restockages",
+    "time_hour": " heure",
+	"time_and": " et ",
+	"time_minute": " minute",
+
+	"blacklist_next_1": "Vous pourrez réaccéder à la **Boutique Étrange** au prochain restockage. La boutique sera restockée dans ",
+	"blacklist_next_2": ".",
+	"blacklist_1": "Vous êtes bloqué d'entrer dans la **Boutique étrange** pour ",
+	"blacklist_2": ". Le prochain restockage sera dans ",
+	"blacklist_3": ".",
+	
+	"out_of_stock_1": "La **Boutique Étrange** n'a plus de **",
+	"out_of_stock_2": "** en stock.",
+	
+	"too_many_requested_1": "Vous ne pouvez voler que ",
+	"too_many_requested_2": " **",
+	"too_many_requested_3": "** maximum.",
+	
+	"nopeeking_error_1": "La **Boutique Étrange** ne semble pas vendre de ",
+	"nopeeking_error_2": ", ou vous l'avez mal écrit.",
+	
+	"donthave_1": "La **Boutique Étrange** ne vend pas de **",
+	"donthave_2": "** à l'heure actuelle.",
+	
+	"alreadyhave_1": "Vous avez déjà le **",
+	"alreadyhave_2": "** dans votre inventaire.",
+	
+	"hasfixedmouse": "Vous avez déjà une Souris.",
+	
+	"oneitemonly": "Vous ne pouvez avoir qu'un seul de chaque objet équipable.",
+	
+	"unknownrequest_1": "La carte ou l'objet ",
+	"unknownrequest_2": " n'existe pas dans la base de données. Vérifiez que vous l'avez bien écrit.",
+
+	"rob_random_nothing": "Il n'y a rien à voler dans la boutique.",
+	"robbing_shop_random": "Vol de la Boutique Étrange...",
+	"rob_shop_random": "Voulez-vous vraiment voler quelque chose de la **Boutique Étrange**? Vous avez plus de chance de réussir, mais vous pouvez toujours être **blacklisté de la boutique** pour quelque jours!",
+
+	"robbing_shop_1": "Vol du ",
+	"robbing_shop_2": "...",
+	"rob_shop_desc": "La description à l'arrière dit:",
+
+	"rob_shop_1": "Voulez-vous vraiment voler ",
+	"rob_shop_2": " **",
+	"rob_shop_3": "** de la **Boutique Étrange**? Vous pouvez **vous faire blacklister de la boutique** pour plusieurs jours!",
+
+	"rob_shop_item_1": "Voulez-vous vraiment voler le **",
+	"rob_shop_item_2": "** de la **Boutique Étrange**? Vous pouvez **vous faire blacklister de la boutique** pour plusieurs jours!",
+
+	"error_already_robbed": "Une erreur est survenue. Vérifiez que vous n'avez pas déjà volé la boutique!",
+
+	"rob_succeeded_1": "Vous entrez dans la **Boutique Étrange**. **G-UI** ne vous remarque pas. Vous prenez ",
+	"rob_succeeded_2": " **",
+	"rob_succeeded_3": "** sans conséquence.",
+
+	"rob_succeeded_item_1": "Vous entrez dans la **Boutique Étrange**. **G-UI** ne vous remarque pas. Vous prenez le **",
+	"rob_succeeded_item_2": "** sans conséquence.",
+
+	"rob_failed_1": "Vous entrez dans la **Boutique Étrange**. **G-UI** vous remarque. Vous tentez de prendre ",
+	"rob_failed_2": " **",
+	"rob_failed_3": "**, il utilise l'**Orbe de Réalité** pour vous téléporter en dehors de la boutique. Vous êtez blacklisté de la boutique pour les ",
+	"rob_failed_4": " prochains restockages.",
+
+	"rob_failed_item_1": "Vous entrez dans la **Boutique Étrange**. **G-UI** vous remarque. Vous tentez de prendre le **",
+	"rob_failed_item_2": "**, il utilise l'**Orbe de Réalité** pour vous téléporter en dehors de la boutique. Vous êtez blacklisté de la boutique pour les ",
+	"rob_failed_item_3": " prochains restockages.",
+
+	"rob_cancelled_1": "<@",
+	"rob_cancelled_2": "> a annulé son vol de la **Boutique Étrange**. Pour le moment..."
+}
