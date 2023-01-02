@@ -27,7 +27,7 @@ local time = sw:getTime()
   local maxcryopodstorage = 3
   
   if uj.equipped == "sparecryopod" then
-    local missedpulls = math.floor((time:toHours() - uj.lastpull)/cooldown)-1
+    local missedpulls = math.floor((time:toHours() - math.max(uj.lastpull, uj.lastequip))/cooldown)-1
     if missedpulls > 0 then
       local resultmessage = "You missed "..missedpulls.." opportunities to pull since last pull,  "
       if uj.storedpulls == maxcryopodstorage then
@@ -47,7 +47,7 @@ local time = sw:getTime()
   if uj.lastpull + cooldown > time:toHours() then
     if uj.storedpulls > 0 then -- use a pull stored in the freezer (the spare cryopod)
       uj.storedpulls = uj.storedpulls - 1
-      message.channel:send("You're on cooldown, but however, you have spare pulls stored in your **Spare Cryopod**, which means you can pull anyways!")
+      message.channel:send("You're on cooldown, but however, you have spare pulls stored in your **Spare Cryopod**, which means you can pull anyways! (You now have **"..uj.storedpulls.."** spare pulls remaining)")
     else
       --extremely jank implementation, please make this cleaner if possible
       local minutesleft = math.ceil(uj.lastpull * 60 - time:toMinutes() + cooldown * 60)

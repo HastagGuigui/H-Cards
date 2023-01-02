@@ -666,6 +666,7 @@ function command.run(message, mt, overwrite)
     addcommand("lang",cmd.language)
     addcommand("langlist",cmd.langlist)
     addcommand("rob",cmd.rob)
+    addcommand("rtsitem",cmd.rtsitem)
     ---custom h-cards stuff
     addcommand("h",cmd.h)
     addcommand("info",cmd.info)
