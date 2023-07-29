@@ -297,7 +297,7 @@ function command.run(message, mt,bypass)
         end
 
         if not uj.storage[getcard] then
-          if not uj.checkcard then
+          if not uj.togglecheckcard then
             message.channel:send(lang.not_in_storage_1 .. cdb[getcard].name .. lang.not_in_storage_2)
           end
         end
@@ -851,21 +851,34 @@ o-''|\\_____/)
       end
       request = constexttofn(request)
       if uj.consumables[request] then
-        if not uj.skipprompts then
-          ynbuttons(message,{
-            color = 0x85c5ff,
-            title = lang.using_1 .. consdb[request].name .. lang.using_2,
-            description = lang.use_confirm_1 .. consdb[request].name .. lang.use_confirm_2,
-          },"useconsumable",{crequest=request,mt=mt},uj.id,uj.lang)
-          return
-        else
-          local fn = request
-          if consdb[request].command then
-            request = consdb[request].command
-          end
-          cmdcons[request].run(uj, "savedata/" .. message.author.id .. ".json", message, mt, nil , fn)
-          return
+		if not consdb[request].unusable then
+			if not uj.skipprompts then
+			  ynbuttons(message,{
+				color = 0x85c5ff,
+				title = lang.using_1 .. consdb[request].name .. lang.using_2,
+				description = lang.use_confirm_1 .. consdb[request].name .. lang.use_confirm_2,
+			  },"useconsumable",{crequest=request,mt=mt},uj.id,uj.lang)
+			  return
+			else
+      if request == "..." then request = "ddd" end
+        if request ~= "ddd" then
+          if uj.equipped == 'aceofhearts' then
+            if uj.acepulls ~= 0 then
+                message.channel:send('The pulls stored in your **Ace of Hearts** disappear...')
+                uj.acepulls = 0
+            end    
         end
+      end
+			  local fn = request
+			  if consdb[request].command then
+				request = consdb[request].command
+			  end
+			  cmdcons[request].run(uj, "savedata/" .. message.author.id .. ".json", message, mt, nil , fn)
+			  return
+			end
+		else
+			message.channel:send('You cannot use this item!')
+		end
       else
         message.channel:send(lang.donthave_1 .. consdb[request].name .. lang.donthave_2)
       end

@@ -63,8 +63,10 @@ function command.run(message, mt)
     message.channel:send(formatstring(lang.caught, {message.author.mentionString, caughtname, item, uj.pronouns["their"]}))
   end
   if not uj.togglecheckcard then
-    if not uj.storage[cardfilename] then
-      message.channel:send(lang.not_in_storage_1 .. caughtname .. lang.not_in_storage_2)
+    if item == "card" or item == "카드" then
+      if not uj.storage[cardfilename] then
+        message.channel:send(lang.not_in_storage_1 .. caughtname .. lang.not_in_storage_2)
+      end
     end
   end
 end

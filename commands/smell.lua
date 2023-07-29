@@ -59,10 +59,10 @@ function command.run(message, mt)
       driftingmetronome = lang.smell_driftingmetronome,
       filmreel = lang.smell_filmreel,
       swirlymarbles = lang.smell_swirlymarbles,
-      granolabar = lang.smell_granolabar,
-      hauntedgrass = lang.smell_hauntedgrass, --unsure if this is the right usage but whatevs
-      --cryopod
-      subwayticket = lang.smell_subwayticket
+      sparecryopod = lang.smell_sparecryopod,
+      aceofhearts = lang.smell_aceofhearts,
+      doubleedge = lang.smell_doubleedge,
+      fakemustache = lang.smell_fakemustache,
     }
     local consumablesmells = {
       caffeinatedsoda = lang.smell_caffeinatedsoda,
@@ -91,7 +91,19 @@ function command.run(message, mt)
       s4booster = lang.smell_s4booster,
       s5booster = lang.smell_s5booster,
       s6booster = lang.smell_s6booster,
-      s7booster = lang.smell_s7booster
+      s7booster = lang.smell_s7booster,
+      s8booster = lang.smell_s8booster,
+      granolabar = lang.smell_granolabar,
+      hauntedgrass = lang.smell_hauntedgrass,
+      subwayticket = lang.smell_subwayticket,
+      ddd = lang.smell_ddd,
+
+      essenceofgranolabar = lang.smell_essenceofgranolabar,
+      essenceofhauntedgrass = lang.smell_essenceofhauntedgrass,
+      essenceofsparecryopod = lang.smell_essenceofsparecryopod,
+      essenceofaceofhearts = lang.smell_essenceofaceofhearts,
+      essenceofsubwayticket = lang.smell_essenceofsubwayticket,
+      essenceofddd = lang.smell_essenceofddd,
     }
 
     if uj.lang ~= "en" and request == lang.request_panda then

@@ -35,6 +35,7 @@ function command.run(message, mt,mc)
             }
           }}
         else
+          if uj.lang == "ko" then
           mc:send{
           content = "**" .. lang.congratulations .. "**\n" .. formatstring(lang.gotcard, {message.author.mentionString, ncn, uj.pronouns["their"]}),
           file = "card_images/SPOILER_" .. newcard .. ".png"

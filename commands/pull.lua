@@ -44,6 +44,36 @@ local time = sw:getTime()
     uj.storedpulls = 0
   end
 
+  if not uj.storedpulls then
+    uj.storedpulls = 0
+  end
+  
+  if not uj.acepulls then
+	uj.acepulls = 0
+  end
+
+  local maxcryopodstorage = 3
+  
+  
+  if uj.equipped == "sparecryopod" then
+    local missedpulls = math.floor((time:toHours() - math.max(uj.lastpull, uj.lastequip))/cooldown)-1
+    if missedpulls > 0 then
+			--TODO: translated strings (also i really need to hurry up on implementing the upgrade to languages)
+      local resultmessage = "You missed "..missedpulls.." opportunities to pull since last pull,  "
+      if uj.storedpulls == maxcryopodstorage then
+        resultmessage = resultmessage.."but your **Spare Cryopod** is full, because it has already "..maxcryopodstorage.." pulls in it."
+      elseif missedpulls + uj.storedpulls > maxcryopodstorage then
+        resultmessage = resultmessage.."however your **Spare Cryopod** was able to store "..(math.min(uj.storedpulls + missedpulls, maxcryopodstorage)-uj.storedpulls).." of them."
+      else
+        resultmessage = resultmessage.."however your **Spare Cryopod** was able to store all "..missedpulls.." of them, bringing your total stored pulls to "..uj.storedpulls+missedpulls.."."
+      end
+      message.channel:send(resultmessage)
+      uj.storedpulls = math.min(uj.storedpulls + missedpulls, maxcryopodstorage)
+    end
+  elseif uj.storedpulls > 0 then
+    uj.storedpulls = 0
+  end
+
   if uj.lastpull + cooldown > time:toHours() then
     if uj.storedpulls > 0 then -- use a pull stored in the freezer (the spare cryopod)
       uj.storedpulls = uj.storedpulls - 1
@@ -145,10 +175,26 @@ local time = sw:getTime()
     end
     uj.conspt = "none"
   end
-
+	if forcepull ~= nil then
+		pulledcards = { forcepull }
+		forcepull = nil
+	end
   for i, v in ipairs(pulledcards) do
     uj.inventory[v] = uj.inventory[v] and uj.inventory[v] + 1 or 1
     uj.timespulled = uj.timespulled and uj.timespulled + 1 or 1
+	if uj.equipped == 'aceofhearts' then
+		uj.acepulls = uj.acepulls + 1
+	else
+		uj.acepulls = 0
+	end
+  end
+  
+  local showacemessage = false
+  
+  if uj.acepulls >= 21 and uj.equipped == 'aceofhearts' then
+	uj.acepulls = 0
+	uj.tokens = uj.tokens + 10 or 10
+	showacemessage = true
   end
 
   dpf.savejson("savedata/" .. message.author.id .. ".json",uj)
@@ -170,6 +216,7 @@ local time = sw:getTime()
     if v == "yor" or v == "yosr" or v == "your" then title = lang.pulled_yo end
     if i == 2 then title = lang.pulled_doubleclick end
     if i == 3 then title = lang.pulled_tripleclick end
+	if v == "samarrrai" then title = "Ahoy Matey!" end
 
     if v == "rdnot" then
 	    message.channel:send("```" .. title .. "\n@" .. formatstring(lang.rdnot_message,{message.author.name, uj.pronouns["their"]}) .. [[
@@ -210,6 +257,9 @@ _________________```]])
         message.channel:send(formatstring(lang.not_in_storage, {cardname}))
       end
     end
+  end
+  if showacemessage then
+	message.channel:send('Because of '..uj.pronouns['their']..' **Ace of Hearts**, '..message.author.mentionString.. ' also got **10 tokens**!')
   end
 end
 return command
