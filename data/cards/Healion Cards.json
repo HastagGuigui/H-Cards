@@ -6,7 +6,7 @@
           "chance": 1,
           "filename": "pensiveh",
           "name": "Sad Healion",
-          "type": "Rare",
+          "type": "Discontinued",
           "description": "...",
           "smell": "regrets and heartache",
           "season": 88,
@@ -14,12 +14,12 @@
               "paddedstickersheet": true,
           },
           "embed": "https://cdn.discordapp.com/attachments/1003312664635772998/1004691522341584917/pensiveh.png"
-      },
+      }
       {
           "chance": 1,
           "filename": "happyh",
           "name": "Healion",
-          "type": "Rare",
+          "type": "Discontinued",
           "description": "I feel alright ^v^",
           "smell": "H",
           "season": 88,
@@ -27,12 +27,12 @@
               "paddedstickersheet": true,
           },
           "embed": "https://cdn.discordapp.com/attachments/1003312664635772998/1004691607729209424/happyh.png"
-      },
+      }
       {
           "chance": 1,
           "filename": "angryh",
           "name": "Mad/Corrupted Healion",
-          "type": "Rare",
+          "type": "Discontinued",
           "description": "Everything you make is worthless",
           "smell": "self-doubts",
           "season": 88,
