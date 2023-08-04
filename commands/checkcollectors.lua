@@ -40,6 +40,7 @@ function command.run(message, mt,mc)
           content = "**" .. lang.congratulations .. "**\n" .. formatstring(lang.gotcard, {message.author.mentionString, ncn, uj.pronouns["their"]}),
           file = "card_images/SPOILER_" .. newcard .. ".png"
         }
+          end
         end
       else
         print("no card for you lol")

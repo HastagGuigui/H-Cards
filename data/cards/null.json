@@ -1,6 +1,6 @@
 {
       "groupname": "null",
-      "basechance": 1,
+      "basechance": 3,
       "cards": [{
           "chance": 1,
           "filename": "nulldc",

@@ -133,6 +133,12 @@ local time = sw:getTime()
   else
     pulledcards = {ptable[uj.equipped][math.random(#ptable[uj.equipped])]}
   end
+  for k,v in ipairs(ptablenc[uj.equipped]) do
+    --print("Found card: "..v)
+    if v == "nulldc" then
+      print("null at "..k) 
+    end
+  end
   
   if not uj.conspt then
     uj.conspt = "none"
